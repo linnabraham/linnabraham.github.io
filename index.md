@@ -1,7 +1,9 @@
 _Warning: Site under construction_
+
 Hello World
 
-## My Sudo Privileges
+## My Preoccupation
+I am a researcher working on the application on AI to scientific problems in Astronomy, Biology etc. 
 
 ## Metadata
 Email id: linn.official@gmail.com  
