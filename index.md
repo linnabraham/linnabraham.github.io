@@ -7,5 +7,5 @@ I am a researcher working on the application of AI to scientific problems in Ast
 ## Metadata
 Email id: linn.official@gmail.com  
 UPI id: linn.official@icici  
-GPG2 key: [ view ](./info/linn-key.asc)  
 Telegram id: @tlwizard167
+GPG2 key: [ view ](./info/linn-key.asc)  
