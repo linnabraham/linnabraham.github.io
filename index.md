@@ -1,7 +1,7 @@
 _Warning: Site under construction_
 
 
-## My Preoccupation
+## Preoccupation
 I am a researcher working on the application of AI to scientific problems in Astronomy, Biology etc. 
 
 ## Metadata
