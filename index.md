@@ -1,12 +1,6 @@
-_Warning: Site under construction_
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-
-
-## Preoccupation
-I am a researcher working on the application of AI to scientific problems in Astronomy, Biology etc. 
-
-## Metadata
-Email id: linn.official@gmail.com  
-UPI id: linn.official@icici  
-Telegram id: @tlwizard167  
-GPG2 key: [ view ](./info/linn-key.asc)  
+layout: home
+---
