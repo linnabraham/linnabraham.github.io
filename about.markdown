@@ -1,18 +1,13 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Preoccupation
+I am a researcher working on the application of AI to scientific problems in Astronomy, Biology etc. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+## Metadata
+Email id: linn.official@gmail.com  
+UPI id: linn.official@icici  
+Telegram id: @tlwizard167  
+GPG2 key: [ view ](info/linn-key.asc)
