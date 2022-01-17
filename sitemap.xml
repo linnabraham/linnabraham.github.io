@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://linnabraham.github.io/posts/laptops2020/</loc>
-    <lastmod>2020-10-15T09:42:55+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://linnabraham.github.io/posts/</loc>
-    <lastmod>2020-10-15T09:42:55+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://linnabraham.github.io/</loc>
-    <lastmod>2020-10-15T09:42:55+05:30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://linnabraham.github.io/posts/2020-09-03-my-arch-linux-install-guide/</loc>
     <lastmod>2020-09-03T13:11:40+05:30</lastmod>
     <changefreq>monthly</changefreq>
@@ -28,6 +13,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://linnabraham.github.io/categories/jekyll-update/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://linnabraham.github.io/posts/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://linnabraham.github.io/</loc>
     <lastmod>2020-09-03T13:11:40+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
