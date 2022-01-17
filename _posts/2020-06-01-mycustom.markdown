@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Dummy Custom Page"
-date:   2020-06-01 13:11:40 +0530
-categories: jekyll update
----
-
-This seems quite cool. As far as I am concerned.

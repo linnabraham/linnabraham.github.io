@@ -1,0 +1,4 @@
+baseURL = "https://techshack.xyz/blog/"
+languageCode = "en-us"
+title = "Soul Space"
+theme = "ananke"

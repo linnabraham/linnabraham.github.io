@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://techshack.xyz/blog/posts/2020-09-03-my-arch-linux-install-guide/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/categories/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/categories/jekyll-update/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/posts/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/</loc>
+    <lastmod>2020-09-03T13:11:40+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/blog/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://techshack.xyz/blog/tags/</loc>
+  </url>
+  
+</urlset>
