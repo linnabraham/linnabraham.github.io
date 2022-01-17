@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Soul Space</title>
+    <link>https://linnabraham.github.io/blog/posts/</link>
+    <description>Recent content in Posts on Soul Space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Oct 2020 09:42:55 +0530</lastBuildDate><atom:link href="https://linnabraham.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laptops2020</title>
+      <link>https://linnabraham.github.io/blog/posts/laptops2020/</link>
+      <pubDate>Thu, 15 Oct 2020 09:42:55 +0530</pubDate>
+      
+      <guid>https://linnabraham.github.io/blog/posts/laptops2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An advanced guide to install Arch on USB</title>
+      <link>https://linnabraham.github.io/blog/posts/2020-09-03-my-arch-linux-install-guide/</link>
+      <pubDate>Thu, 03 Sep 2020 13:11:40 +0530</pubDate>
+      
+      <guid>https://linnabraham.github.io/blog/posts/2020-09-03-my-arch-linux-install-guide/</guid>
+      <description>For someone who is already following the Arch Wiki official install instructions here, it only makes sense to supplement those wherever necessary.
+The official Arch install can be broken down into :
+ partitioning the usb format the parition mount the root(/) parition pacstrap generat fstab change root set timezone info generate locales set root password install the boot loader (grub, say) configure grub exit, unmount and reboot  Paritition USB It is better to format and paritition the device beforehand.</description>
+    </item>
+    
+  </channel>
+</rss>
