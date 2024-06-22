@@ -1,31 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Soul Space</title>
-    <link>https://linnabraham.github.io/</link>
-    <description>Recent content on Soul Space</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2020 13:11:40 +0530</lastBuildDate><atom:link href="https://linnabraham.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>An advanced guide to install Arch on USB</title>
-      <link>https://linnabraham.github.io/posts/2020-09-03-my-arch-linux-install-guide/</link>
-      <pubDate>Thu, 03 Sep 2020 13:11:40 +0530</pubDate>
-      
-      <guid>https://linnabraham.github.io/posts/2020-09-03-my-arch-linux-install-guide/</guid>
-      <description>For someone who is already following the Arch Wiki official install instructions here, it only makes sense to supplement those wherever necessary.
-The official Arch install can be broken down into :
- partitioning the usb format the parition mount the root(/) parition pacstrap generat fstab change root set timezone info generate locales set root password install the boot loader (grub, say) configure grub exit, unmount and reboot  Paritition USB It is better to format and paritition the device beforehand.</description>
-    </item>
+	<title>My New Hugo Site</title>
+	<link>http://localhost:1313/</link>
+	<description>Recent content on My New Hugo Site</description>
+	<generator>Hugo -- gohugo.io</generator>
+	<language>en-us</language>
+	<lastBuildDate>Sat, 22 Jun 2024 17:47:20 +0530</lastBuildDate>
     
-    <item>
-      <title></title>
-      <link>https://linnabraham.github.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://linnabraham.github.io/blog/</guid>
-      <description>Hi this is cool.</description>
-    </item>
-    
-  </channel>
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	
+	
+	<item>
+		<title>Machine Learning Resources</title>
+		<link>http://localhost:1313/books/</link>
+		<pubDate>Sat, 22 Jun 2024 19:28:06 +0530</pubDate>
+		
+		<guid>http://localhost:1313/books/</guid>
+		<description>&lt;p&gt;These are books I have read (at least partly) and know to be good.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864/&#34;&gt;Deep Learning with Python&lt;/a&gt; by Francois Chollet&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1466583282/&#34;&gt;Machine Learning: An Algorithmic Perspective&lt;/a&gt; by Stephen Marsland&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Statistics-Mining-Machine-Learning-Astronomy/dp/0691198306&#34;&gt;Statistics, Data Mining, and Machine Learning in Astronomy&lt;/a&gt; by Željko Ivezić, Andrew J. Connolly , Jacob T. VanderPlas &amp;amp; Alexander Gray&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618&#34;&gt;Deep Learning &lt;/a&gt; by Ian Goodfellow , Yoshua Bengio&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/&#34;&gt;Pattern Recognition and Machine Learning&lt;/a&gt; by Christopher M. Bishop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are books I believe are great and which I would like to read.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Information-Theory-Inference-Learning-Algorithms/dp/0521642981&#34;&gt;Information Theory, Inference and Learning Algorithms&lt;/a&gt; by David J. C. MacKay&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Introduction-Statistical-Learning-Applications-Statistics/dp/3031387465/&#34;&gt;An Introduction to Statistical Learning&lt;/a&gt; by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani &amp;amp; Jonathan Taylor&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>About Me</title>
+		<link>http://localhost:1313/about/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>http://localhost:1313/about/</guid>
+		<description>&lt;p&gt;I am Linn Abraham. I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which has random stuff that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page.&lt;/p&gt;
+</description>
+	</item>
+	
+	</channel>
 </rss>
