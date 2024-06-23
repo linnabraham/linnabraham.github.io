@@ -125,7 +125,7 @@ When you set up github actions, Github has a computer that serves the content of
           overflow: hidden;
         }
       &lt;/style&gt;
-      &lt;div id=&#34;gr_grid_widget_1719125281&#34;&gt;
+      &lt;div id=&#34;gr_grid_widget_1719130852&#34;&gt;
         &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
             &lt;h2&gt;
       &lt;a style=&#34;text-decoration: none;&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/review/list/5186783-linn?shelf=read&amp;utm_medium=api&amp;utm_source=grid_widget&#34;&gt;Linn&#39;s bookshelf: read&lt;/a&gt;
@@ -156,7 +156,8 @@ When you set up github actions, Github has a computer that serves the content of
   &lt;/div&gt;
 
       &lt;/div&gt;
-      &lt;script src=&#34;https://www.goodreads.com/review/grid_widget/5186783.Linn&#39;s%20bookshelf:%20read?cover_size=medium&amp;hide_link=&amp;hide_title=&amp;num_books=30&amp;order=d&amp;shelf=read&amp;sort=date_read&amp;widget_id=1719125281&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+      &lt;script src=&#34;https://www.goodreads.com/review/grid_widget/5186783.Linn&#39;s%20bookshelf:%20read?cover_size=medium&amp;hide_link=&amp;hide_title=&amp;num_books=30&amp;order=d&amp;shelf=read&amp;sort=date_read&amp;widget_id=1719130852&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
 </description>
 	</item>
 	
