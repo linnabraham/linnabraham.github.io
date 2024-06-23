@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linnabraham.me/lifehacks/</loc>
+    <lastmod>2024-06-23T12:41:17+05:30</lastmod>
+  </url><url>
     <loc>https://linnabraham.me/goodreads/</loc>
     <lastmod>2024-06-23T12:10:32+05:30</lastmod>
   </url><url>
@@ -25,8 +28,6 @@
     <loc>https://linnabraham.me/about/</loc>
   </url><url>
     <loc>https://linnabraham.me/categories/</loc>
-  </url><url>
-    <loc>https://linnabraham.me/posts/fresh/</loc>
   </url><url>
     <loc>https://linnabraham.me/tags/</loc>
   </url>
