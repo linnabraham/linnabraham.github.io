@@ -11,6 +11,16 @@
 	
 	
 	<item>
+		<title>Understanding diff</title>
+		<link>https://linnabraham.me/notes/understanding_diff/</link>
+		<pubDate>Mon, 24 Jun 2024 11:45:39 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/notes/understanding_diff/</guid>
+		<description>&lt;p&gt;Do you find it difficult at times to interpret the output of &lt;code&gt;diff foo bar&lt;/code&gt;?&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Lifehacks for a Workaholic</title>
 		<link>https://linnabraham.me/lifehacks/</link>
 		<pubDate>Sun, 23 Jun 2024 12:41:17 +0530</pubDate>
