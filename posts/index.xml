@@ -2,10 +2,10 @@
   <channel>
 	<title>Linn Abraham&#39;s homepage</title>
 	<link>https://linnabraham.me/posts/</link>
-	<description>Recent content in Posts on Linn Abraham&#39;s homepage</description>
+	<description>Recent content on Linn Abraham&#39;s homepage</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Sat, 22 Jun 2024 20:47:07 +0530</lastBuildDate>
+	<lastBuildDate>Sat, 22 Jun 2024 17:47:20 +0530</lastBuildDate>
     
         <atom:link href="https://linnabraham.me/posts/index.xml" rel="self" type="application/rss+xml" />
 	
@@ -28,10 +28,10 @@
 	
 	<item>
 		<title>Git and related concepts</title>
-		<link>https://linnabraham.me/git_and_related/</link>
+		<link>https://linnabraham.me/selected/git_and_related/</link>
 		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/git_and_related/</guid>
+		<guid>https://linnabraham.me/selected/git_and_related/</guid>
 		<description>&lt;h2 id=&#34;diff&#34;&gt;Diff&lt;/h2&gt;
 &lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
 To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
@@ -55,10 +55,11 @@ To see the changes that are brought about by a particular commit in git, do the 
 &lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use i3 which is just a tiling window manager. Until recently I was using Openbox which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment.&lt;/p&gt;
 &lt;h3 id=&#34;my-desktop-environment-includes-the-following&#34;&gt;My desktop environment includes the following:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;polybar as my status bar.&lt;/li&gt;
-&lt;li&gt;dunst for my notifications.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;xcompmgr&lt;/code&gt; for window effects.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dmenu&lt;/code&gt; as my application switcher.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;polybar&lt;/code&gt; as my status bar&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dunst&lt;/code&gt; for my notifications&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xcompmgr&lt;/code&gt; for window effects&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dmenu&lt;/code&gt; as my application switcher&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sxhkd&lt;/code&gt; for keyboard shortcuts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
 &lt;ul&gt;
@@ -71,17 +72,25 @@ To see the changes that are brought about by a particular commit in git, do the 
 &lt;li&gt;Code editor - &lt;a href=&#34;https://linnabraham.me/notes/vim_tips/&#34;&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Terminal emulator - &lt;code&gt;xfce4-terminal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Image viewer - &lt;code&gt;sxiv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Graphical file manager - &lt;code&gt;pcmanfm-qt&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;research-related-applications&#34;&gt;Research related applications&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Academic document preparation - LaTeX(&lt;code&gt;texlive&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Reference management - &lt;code&gt;zotero&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;special-purpose-applications&#34;&gt;Special-purpose applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bookmark management - &lt;code&gt;buku&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Terminal file-manager - &lt;code&gt;lf&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Terminal image preview - &lt;code&gt;ueberzug&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Calendar management - &lt;code&gt;khal&lt;/code&gt; , &lt;code&gt;vdirsyncer&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;zsh&lt;/code&gt; as my shell.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;btrfs&lt;/code&gt; as my filesystem format.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;uefi&lt;/code&gt; comptabile bootloader.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zsh&lt;/code&gt; as my shell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;btrfs&lt;/code&gt; as my filesystem format&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uefi&lt;/code&gt; comptabile bootloader&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
@@ -99,10 +108,10 @@ To see the changes that are brought about by a particular commit in git, do the 
 	
 	<item>
 		<title>Lifehacks for a Workaholic</title>
-		<link>https://linnabraham.me/lifehacks/</link>
+		<link>https://linnabraham.me/selected/lifehacks/</link>
 		<pubDate>Sun, 23 Jun 2024 12:41:17 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/lifehacks/</guid>
+		<guid>https://linnabraham.me/selected/lifehacks/</guid>
 		<description>&lt;p&gt;Life is mostly a game of achieving the best of both worlds (or many worlds).
 Here are some of my recommendations for someone who wants to run multiple tasks at a time but also seeks perfection in all that they do.
 There is something called the Getting Things Done (GTD) methodology as made famous by &lt;a href=&#34;https://www.amazon.com/Getting-Things-Done/dp/0143573195&#34;&gt;David Allen&lt;/a&gt; in his book of the same name. If you find the book a bit dry, watch videos by people on youtube like &lt;a href=&#34;https://www.youtube.com/@aliabdaal&#34;&gt;Ali Abdaal&lt;/a&gt;. Two other interesting books to read are &lt;a href=&#34;https://www.goodreads.com/book/show/40121378-atomic-habits&#34;&gt;Atomic Habits&lt;/a&gt; by James Clear and &lt;a href=&#34;https://www.goodreads.com/book/show/25744928-deep-work&#34;&gt;Deep Work&lt;/a&gt; by Cal Newport.&lt;/p&gt;
@@ -121,10 +130,10 @@ Keep a work log for each project where you document the progress you made each d
 	
 	<item>
 		<title>Toolkit for a Machine Learning Researcher</title>
-		<link>https://linnabraham.me/toolkit/</link>
+		<link>https://linnabraham.me/selected/toolkit/</link>
 		<pubDate>Sun, 23 Jun 2024 10:34:25 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/toolkit/</guid>
+		<guid>https://linnabraham.me/selected/toolkit/</guid>
 		<description>&lt;p&gt;When you start out by doing computer vision problems in Deep Learning, you quickly run into the issue of having to deal with remote machines. Especially one&amp;rsquo;s that have GPU designed for such tasks. When you have to deal with these headless machines that do not have a display or user interface, there is a need to learn a plethora of command line tools that are available on linux.
 In order to learn more about the tools that are mentioned below you can watch these set of lectures by the &lt;a href=&#34;https://www.youtube.com/watch?v=Z56Jmr9Z34Q&amp;amp;list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&#34;&gt;Missing Semester&lt;/a&gt; or follow &lt;a href=&#34;https://www.youtube.com/@LukeSmithxyz&#34;&gt;Luke Smith&lt;/a&gt; on youtube. Some of these tools have a big learning curve. Which is the price you pay in order to reap the rewards in the long term. However if you are someone who just wants to get things done and move along or are short of time. I will give alternate suggestions wherever applicable.&lt;/p&gt;
 &lt;h2 id=&#34;tools-that-are-useful-for-anyone&#34;&gt;Tools That are Useful for Anyone&lt;/h2&gt;
@@ -171,10 +180,10 @@ When you set up github actions, Github has a computer that serves the content of
 	
 	<item>
 		<title>Machine Learning Resources</title>
-		<link>https://linnabraham.me/books/</link>
+		<link>https://linnabraham.me/selected/books/</link>
 		<pubDate>Sat, 22 Jun 2024 19:28:06 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/books/</guid>
+		<guid>https://linnabraham.me/selected/books/</guid>
 		<description>&lt;p&gt;These are books I have read (at least partly) and know to be good.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864/&#34;&gt;Deep Learning with Python&lt;/a&gt; by Francois Chollet&lt;/li&gt;
@@ -188,6 +197,11 @@ When you set up github actions, Github has a computer that serves the content of
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Information-Theory-Inference-Learning-Algorithms/dp/0521642981&#34;&gt;Information Theory, Inference and Learning Algorithms&lt;/a&gt; by David J. C. MacKay&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Introduction-Statistical-Learning-Applications-Statistics/dp/3031387465/&#34;&gt;An Introduction to Statistical Learning&lt;/a&gt; by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani &amp;amp; Jonathan Taylor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Non-book recommendations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Videos by Grant Sanderson from the &lt;a href=&#34;https://www.youtube.com/@3blue1brown&#34;&gt;3Blue1Brown&lt;/a&gt; channel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://karpathy.github.io/&#34;&gt;Andrej Karpathy&amp;rsquo;s&lt;/a&gt; blog&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
@@ -265,6 +279,16 @@ A few of the problems that I work on are:&lt;/p&gt;
 &lt;p&gt;My work on the prediction of solar flares using Deep Learning is part of a JRF Project funded by ISRO. I developed and currently maintain the website for the &lt;a href=&#34;https://suit.iucaa.in&#34;&gt;Solar Ultraviolet Imaging Telescope (SUIT)&lt;/a&gt; along with my teammates in &lt;a href=&#34;https://www.google.com/maps/place/The+Inter-University+Centre+for+Astronomy+and+Astrophysics/@18.5592415,73.8253115,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB%3Dw114-h86-k-no!7i4000!8i3000!4m11!1m2!2m1!1sIUCAA!3m7!1s0x3bc2bf45db40022d:0x1efcdd94c3239f51!8m2!3d18.5592415!4d73.8253115!10e5!15sCgVJVUNBQZIBEnJlc2VhcmNoX2luc3RpdHV0ZeABAA!16zL20vMDQ0ODg1?entry=ttu&#34;&gt;IUCAA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which is a collection of random articles that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page. You can also connect with me on &lt;a href=&#34;https://www.linkedin.com/in/linn-abraham/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Check out the movies I watched recently &lt;a href=&#34;https://trakt.tv/users/linnabraham&#34;&gt;here&lt;/a&gt;. Here are some of the &lt;a href=&#34;https://linnabraham.me/grwidget/&#34;&gt;books&lt;/a&gt; that I have read and enjoyed.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Quick Links</title>
+		<link>https://linnabraham.me/links/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>https://linnabraham.me/links/</guid>
+		<description>&lt;p&gt;Hey cool&lt;/p&gt;
 </description>
 	</item>
 	
