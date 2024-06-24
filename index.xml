@@ -11,12 +11,89 @@
 	
 	
 	<item>
+		<title>Vim Tips</title>
+		<link>https://linnabraham.me/notes/vim_tips/</link>
+		<pubDate>Mon, 24 Jun 2024 15:04:48 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/notes/vim_tips/</guid>
+		<description>&lt;h3 id=&#34;some-useful-plugins-to-use-with-vim&#34;&gt;Some Useful Plugins to use with ViM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;gruvbox - A better colortheme than the default&lt;/li&gt;
+&lt;li&gt;markdown-preview - Preview markdown in vim&lt;/li&gt;
+&lt;li&gt;vimtex - Use vim as LaTeX editor&lt;/li&gt;
+&lt;li&gt;vim-gnupg - Handle gpg encrypted files easily with vim&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Git and related concepts</title>
+		<link>https://linnabraham.me/git_and_related/</link>
+		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/git_and_related/</guid>
+		<description>&lt;h2 id=&#34;diff&#34;&gt;Diff&lt;/h2&gt;
+&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
+To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add---patch&#34;&gt;Add &amp;ndash;patch&lt;/h2&gt;
+&lt;p&gt;You can use the &lt;code&gt;git add&lt;/code&gt; command with the &lt;code&gt;-p&lt;/code&gt; option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the &lt;code&gt;e&lt;/code&gt; option you can give to manually create a hunk.&lt;/p&gt;
+&lt;h2 id=&#34;submodules&#34;&gt;Submodules&lt;/h2&gt;
+&lt;p&gt;This is useful when you want to nest a git repo inside another.&lt;/p&gt;
+&lt;h2 id=&#34;github-actions&#34;&gt;Github Actions&lt;/h2&gt;
+&lt;p&gt;Allows you to have workflows attached to your git push commands.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Software I Use</title>
+		<link>https://linnabraham.me/software_i_use/</link>
+		<pubDate>Mon, 24 Jun 2024 12:19:50 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/software_i_use/</guid>
+		<description>&lt;p&gt;I use Linux as my primary operating system. The flavour of Linux that I use is ArchLinux. Which is great on multiple counts. One, it follows a minimalist approach of giving you only the bare minimum packages and configurations by default. Two, it is a rolling release which means that you get the updates of all the packages you have installed, as soon as they are published. The third reason is the presence of the AUR (Arch User Repository) which enables you to install a lot of niche packages with just a single command. All the complicated stuff like the download and configuration are taken care of for you under-the-hood.&lt;/p&gt;
+&lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use i3 which is just a tiling window manager. Until recently I was using Openbox which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment.&lt;/p&gt;
+&lt;h3 id=&#34;my-desktop-environment-includes-the-following&#34;&gt;My desktop environment includes the following:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;polybar as my status bar.&lt;/li&gt;
+&lt;li&gt;dunst for my notifications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xcompmgr&lt;/code&gt; for window effects.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dmenu&lt;/code&gt; as my application switcher.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Music player - &lt;code&gt;mpd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Video player - &lt;code&gt;mpv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Browser - &lt;code&gt;brave&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Text editor - &lt;code&gt;gvim&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Notes app - &lt;code&gt;amplenote&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pdf viewer - &lt;code&gt;evince&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Code editor - &lt;a href=&#34;https://linnabraham.me/notes/vim_tips/&#34;&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Terminal emulator - &lt;code&gt;xfce4-terminal&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Image viewer - &lt;code&gt;sxiv&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;research-related-applications&#34;&gt;Research related applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Academic document preparation - LaTeX(&lt;code&gt;texlive&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Reference management - &lt;code&gt;zotero&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zsh&lt;/code&gt; as my shell.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;btrfs&lt;/code&gt; as my filesystem format.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uefi&lt;/code&gt; comptabile bootloader.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Understanding diff</title>
 		<link>https://linnabraham.me/notes/understanding_diff/</link>
 		<pubDate>Mon, 24 Jun 2024 11:45:39 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/notes/understanding_diff/</guid>
-		<description>&lt;p&gt;Do you find it difficult at times to interpret the output of &lt;code&gt;diff foo bar&lt;/code&gt;?&lt;/p&gt;
+		<description>&lt;p&gt;Q. Do you find it difficult at times to interpret the output of &lt;code&gt;diff foo bar&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;A. The output shows what changes you need to make to &lt;code&gt;foo&lt;/code&gt; in order to make it identical to &lt;code&gt;bar&lt;/code&gt;.&lt;/p&gt;
 </description>
 	</item>
 	
