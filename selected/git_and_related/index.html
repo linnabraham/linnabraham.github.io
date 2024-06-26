@@ -27,6 +27,14 @@ To see the changes that are brought about by a particular commit in git, do the 
 <p>This is useful when you want to nest a git repo inside another.</p>
 <h2 id="github-actions">Github Actions</h2>
 <p>Allows you to have workflows attached to your git push commands.</p>
+<h2 id="tags">Tags</h2>
+<p>Useful when you want to tag your commits with a version number or name or something. Commit messages are often meant to describe the changes that were made. But when you want to associate
+a commit with a working version, tags are helpful.</p>
+<h2 id="pitfalls-to-avoid-when-using-git">Pitfalls to avoid when using Git</h2>
+<p>If you have a working version of a code. Don&rsquo;t keep modifications that are uncommitted in your staging area. You can use <code>git stash</code> for this purpose.
+Once you have a clean repo <code>tag</code> the last commit as the one that has the working version. This is useful if you ever want to revist the state of your repo.
+If you have unmodified code lying around and some of those code are direct or indirect dependencies in your primary code you never know what was the actual state of your repo when you commited it. The commit are no longer a faithful representation.
+This is also where you should start thinking of version controlling your code.</p>
 
 
 <div id="nextprev">

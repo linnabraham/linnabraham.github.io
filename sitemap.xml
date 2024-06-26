@@ -2,16 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linnabraham.me/personal/</loc>
+    <lastmod>2024-06-26T17:29:48+05:30</lastmod>
+  </url><url>
     <loc>https://linnabraham.me/notes/</loc>
-    <lastmod>2024-06-24T15:04:48+05:30</lastmod>
+    <lastmod>2024-06-25T12:59:42+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/notes/research_notes/</loc>
+    <lastmod>2024-06-25T12:59:42+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/notes/learn_python/</loc>
+    <lastmod>2024-06-25T10:35:09+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/selected/programming_resources/</loc>
+    <lastmod>2024-06-25T10:13:09+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/selected/</loc>
+    <lastmod>2024-06-25T10:13:09+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/notes/vim_tips/</loc>
     <lastmod>2024-06-24T15:04:48+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/selected/git_and_related/</loc>
-    <lastmod>2024-06-24T12:40:39+05:30</lastmod>
-  </url><url>
-    <loc>https://linnabraham.me/selected/</loc>
     <lastmod>2024-06-24T12:40:39+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/software_i_use/</loc>

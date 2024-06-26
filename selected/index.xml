@@ -5,10 +5,74 @@
 	<description>Recent content in Selecteds on Linn Abraham&#39;s homepage</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Mon, 24 Jun 2024 12:40:39 +0530</lastBuildDate>
+	<lastBuildDate>Tue, 25 Jun 2024 10:13:09 +0530</lastBuildDate>
     
         <atom:link href="https://linnabraham.me/selected/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Social Media Links</title>
+		<link>https://linnabraham.me/personal/</link>
+		<pubDate>Wed, 26 Jun 2024 17:29:48 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/personal/</guid>
+		<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://trakt.tv/users/linnabraham&#34;&gt;Trakt.tv&lt;/a&gt; - Movies I have watched&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://linnabraham.me/grwidget/&#34;&gt;Bookshelf&lt;/a&gt; - Books I have read&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/quotes/list?utf8=%E2%9C%93&amp;amp;sort=date_added&#34;&gt;Quotes&lt;/a&gt; - that are my favourite&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.last.fm/user/linnabraham&#34;&gt;Music&lt;/a&gt; - that I listen to&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Research Notes</title>
+		<link>https://linnabraham.me/notes/research_notes/</link>
+		<pubDate>Tue, 25 Jun 2024 12:59:42 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/notes/research_notes/</guid>
+		<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.astropy.org/en/stable/io/fits/appendix/faq.html#id16&#34;&gt;I am opening many FITS files in a loop and getting OSError: Too many open files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To see how I implemented this fix in my code see this &lt;a href=&#34;https://github.com/linnabraham/solar/commit/07d8e5760d839082b1d4678905bf1f6ef8ed2a3b&#34;&gt;commit&lt;/a&gt;&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Learning Python</title>
+		<link>https://linnabraham.me/notes/learn_python/</link>
+		<pubDate>Tue, 25 Jun 2024 10:35:09 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/notes/learn_python/</guid>
+		<description>&lt;p&gt;These are some of my notes on learning python.&lt;/p&gt;
+&lt;h3 id=&#34;dictionaries-in-python&#34;&gt;Dictionaries in Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keys are not limited to strings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;best-practices&#34;&gt;Best practices&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;pylint&lt;/code&gt; to catch errors before actually running your code.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Resources for programmers</title>
+		<link>https://linnabraham.me/selected/programming_resources/</link>
+		<pubDate>Tue, 25 Jun 2024 10:13:09 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/selected/programming_resources/</guid>
+		<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; - A free Linux computer to practice coding, through a jupyter notebook IDE.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; - Problems to practice your coding skills.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://lectures.scientific-python.org/&#34;&gt;Scientific Python&lt;/a&gt; - Introduction to advanced topics in scientific data analysis with Python.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;curated-videos&#34;&gt;Curated videos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=QXjU9qTsYCc&#34;&gt;How do computers read code?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Vim Tips</title>
@@ -42,6 +106,14 @@ To see the changes that are brought about by a particular commit in git, do the 
 &lt;p&gt;This is useful when you want to nest a git repo inside another.&lt;/p&gt;
 &lt;h2 id=&#34;github-actions&#34;&gt;Github Actions&lt;/h2&gt;
 &lt;p&gt;Allows you to have workflows attached to your git push commands.&lt;/p&gt;
+&lt;h2 id=&#34;tags&#34;&gt;Tags&lt;/h2&gt;
+&lt;p&gt;Useful when you want to tag your commits with a version number or name or something. Commit messages are often meant to describe the changes that were made. But when you want to associate
+a commit with a working version, tags are helpful.&lt;/p&gt;
+&lt;h2 id=&#34;pitfalls-to-avoid-when-using-git&#34;&gt;Pitfalls to avoid when using Git&lt;/h2&gt;
+&lt;p&gt;If you have a working version of a code. Don&amp;rsquo;t keep modifications that are uncommitted in your staging area. You can use &lt;code&gt;git stash&lt;/code&gt; for this purpose.
+Once you have a clean repo &lt;code&gt;tag&lt;/code&gt; the last commit as the one that has the working version. This is useful if you ever want to revist the state of your repo.
+If you have unmodified code lying around and some of those code are direct or indirect dependencies in your primary code you never know what was the actual state of your repo when you commited it. The commit are no longer a faithful representation.
+This is also where you should start thinking of version controlling your code.&lt;/p&gt;
 </description>
 	</item>
 	
@@ -52,8 +124,8 @@ To see the changes that are brought about by a particular commit in git, do the 
 		
 		<guid>https://linnabraham.me/software_i_use/</guid>
 		<description>&lt;p&gt;I use Linux as my primary operating system. The flavour of Linux that I use is ArchLinux. Which is great on multiple counts. One, it follows a minimalist approach of giving you only the bare minimum packages and configurations by default. Two, it is a rolling release which means that you get the updates of all the packages you have installed, as soon as they are published. The third reason is the presence of the AUR (Arch User Repository) which enables you to install a lot of niche packages with just a single command. All the complicated stuff like the download and configuration are taken care of for you under-the-hood.&lt;/p&gt;
-&lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use i3 which is just a tiling window manager. Until recently I was using Openbox which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment.&lt;/p&gt;
-&lt;h3 id=&#34;my-desktop-environment-includes-the-following&#34;&gt;My desktop environment includes the following:&lt;/h3&gt;
+&lt;h3 id=&#34;desktop-environment&#34;&gt;Desktop Environment&lt;/h3&gt;
+&lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use i3 which is just a tiling window manager. Until recently I was using Openbox which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment. My desktop environment includes the following apps.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;polybar&lt;/code&gt; as my status bar&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;dunst&lt;/code&gt; for my notifications&lt;/li&gt;
@@ -85,12 +157,18 @@ To see the changes that are brought about by a particular commit in git, do the 
 &lt;li&gt;Terminal file-manager - &lt;code&gt;lf&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Terminal image preview - &lt;code&gt;ueberzug&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Calendar management - &lt;code&gt;khal&lt;/code&gt; , &lt;code&gt;vdirsyncer&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Password management - &lt;code&gt;pass&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Music metadata management - &lt;code&gt;musicbrainz picard&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;zsh&lt;/code&gt; as my shell&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;btrfs&lt;/code&gt; as my filesystem format&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;uefi&lt;/code&gt; comptabile bootloader&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;web-services&#34;&gt;Web services&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;omnivore&lt;/code&gt; as my read-it-later app&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
@@ -278,7 +356,7 @@ A few of the problems that I work on are:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;My work on the prediction of solar flares using Deep Learning is part of a JRF Project funded by ISRO. I developed and currently maintain the website for the &lt;a href=&#34;https://suit.iucaa.in&#34;&gt;Solar Ultraviolet Imaging Telescope (SUIT)&lt;/a&gt; along with my teammates in &lt;a href=&#34;https://www.google.com/maps/place/The+Inter-University+Centre+for+Astronomy+and+Astrophysics/@18.5592415,73.8253115,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB%3Dw114-h86-k-no!7i4000!8i3000!4m11!1m2!2m1!1sIUCAA!3m7!1s0x3bc2bf45db40022d:0x1efcdd94c3239f51!8m2!3d18.5592415!4d73.8253115!10e5!15sCgVJVUNBQZIBEnJlc2VhcmNoX2luc3RpdHV0ZeABAA!16zL20vMDQ0ODg1?entry=ttu&#34;&gt;IUCAA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which is a collection of random articles that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page. You can also connect with me on &lt;a href=&#34;https://www.linkedin.com/in/linn-abraham/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Check out the movies I watched recently &lt;a href=&#34;https://trakt.tv/users/linnabraham&#34;&gt;here&lt;/a&gt;. Here are some of the &lt;a href=&#34;https://linnabraham.me/grwidget/&#34;&gt;books&lt;/a&gt; that I have read and enjoyed.&lt;/p&gt;
+&lt;p&gt;If you are interested to know me personally check out my &lt;a href=&#34;https://linnabraham.me/personal/&#34;&gt;social media&lt;/a&gt; links.&lt;/p&gt;
 </description>
 	</item>
 	
