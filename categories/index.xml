@@ -51,6 +51,7 @@
 &lt;h3 id=&#34;best-practices&#34;&gt;Best practices&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Use &lt;code&gt;pylint&lt;/code&gt; to catch errors before actually running your code.&lt;/li&gt;
+&lt;li&gt;Learn how to use &lt;code&gt;argparse&lt;/code&gt; effectively. Scripts written using argparse can even be run inside jupyter-notebooks with slight tweaking.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
@@ -122,42 +123,42 @@ This is also where you should start thinking of version controlling your code.&l
 		<pubDate>Mon, 24 Jun 2024 12:19:50 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/software_i_use/</guid>
-		<description>&lt;p&gt;I use Linux as my primary operating system. The flavour of Linux that I use is ArchLinux. Which is great on multiple counts. One, it follows a minimalist approach of giving you only the bare minimum packages and configurations by default. Two, it is a rolling release which means that you get the updates of all the packages you have installed, as soon as they are published. The third reason is the presence of the AUR (Arch User Repository) which enables you to install a lot of niche packages with just a single command. All the complicated stuff like the download and configuration are taken care of for you under-the-hood.&lt;/p&gt;
+		<description>&lt;p&gt;I use Linux as my primary operating system. The flavour of Linux that I use is &lt;a href=&#34;https://archlinux.org/&#34;&gt;ArchLinux&lt;/a&gt;. Which is great on multiple counts. One, it follows a minimalist approach of giving you only the bare minimum packages and configurations by default. Two, it is a rolling release which means that you get the updates for all the packages you have installed, as soon as they are published. The third reason is the presence of the &lt;a href=&#34;https://aur.archlinux.org/&#34;&gt;AUR&lt;/a&gt; (Arch User Repository) which enables you to install a lot of niche packages with just a single command. All the complicated stuff like the download and configuration are taken care of for you under-the-hood.&lt;/p&gt;
 &lt;h3 id=&#34;desktop-environment&#34;&gt;Desktop Environment&lt;/h3&gt;
-&lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use i3 which is just a tiling window manager. Until recently I was using Openbox which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment. My desktop environment includes the following apps.&lt;/p&gt;
+&lt;p&gt;I do not use any of the full fledged desktop environments (DE) like &lt;code&gt;Gnome&lt;/code&gt; or &lt;code&gt;KDE&lt;/code&gt;. Rather  I use &lt;a href=&#34;https://wiki.archlinux.org/title/I3&#34;&gt;i3&lt;/a&gt; which is just a tiling window manager. Until recently I was using &lt;a href=&#34;https://wiki.archlinux.org/title/Openbox&#34;&gt;Openbox&lt;/a&gt; which was a floating window manager. Using just a window manager means that you get to pick and choose and build your own desktop environment. My desktop environment includes the following apps.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;polybar&lt;/code&gt; as my status bar&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dunst&lt;/code&gt; for my notifications&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;xcompmgr&lt;/code&gt; for window effects&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;dmenu&lt;/code&gt; as my application switcher&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sxhkd&lt;/code&gt; for keyboard shortcuts&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Polybar&#34;&gt;&lt;code&gt;polybar&lt;/code&gt;&lt;/a&gt; as my status bar&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Dunst&#34;&gt;&lt;code&gt;dunst&lt;/code&gt;&lt;/a&gt; for my notifications&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Xcompmgr&#34;&gt;&lt;code&gt;xcompmgr&lt;/code&gt;&lt;/a&gt; for window effects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Dmenu&#34;&gt;&lt;code&gt;dmenu&lt;/code&gt;&lt;/a&gt; as my application switcher&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Sxhkd&#34;&gt;&lt;code&gt;sxhkd&lt;/code&gt;&lt;/a&gt; for keyboard shortcuts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Music player - &lt;code&gt;mpd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Music player - &lt;a href=&#34;https://wiki.archlinux.org/title/Music_Player_Daemon&#34;&gt;&lt;code&gt;mpd&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/SoongNoonien/plattenalbum&#34;&gt;plattenablum&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Video player - &lt;code&gt;mpv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Browser - &lt;code&gt;brave&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Text editor - &lt;code&gt;gvim&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Notes app - &lt;code&gt;amplenote&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Pdf viewer - &lt;code&gt;evince&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Code editor - &lt;a href=&#34;https://linnabraham.me/notes/vim_tips/&#34;&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Terminal emulator - &lt;code&gt;xfce4-terminal&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Image viewer - &lt;code&gt;sxiv&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Graphical file manager - &lt;code&gt;pcmanfm-qt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Image viewer - &lt;a href=&#34;https://wiki.archlinux.org/title/Sxiv&#34;&gt;&lt;code&gt;sxiv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Graphical file manager - &lt;a href=&#34;https://github.com/lxqt/pcmanfm-qt&#34;&gt;&lt;code&gt;pcmanfm-qt&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;research-related-applications&#34;&gt;Research related applications&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Academic document preparation - LaTeX(&lt;code&gt;texlive&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Reference management - &lt;code&gt;zotero&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Academic document preparation - &lt;a href=&#34;https://wiki.archlinux.org/title/TeX_Live&#34;&gt;&lt;code&gt;texlive&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reference management - &lt;a href=&#34;https://www.zotero.org/&#34;&gt;&lt;code&gt;zotero&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;special-purpose-applications&#34;&gt;Special-purpose applications&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Bookmark management - &lt;code&gt;buku&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Terminal file-manager - &lt;code&gt;lf&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Terminal image preview - &lt;code&gt;ueberzug&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Calendar management - &lt;code&gt;khal&lt;/code&gt; , &lt;code&gt;vdirsyncer&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Password management - &lt;code&gt;pass&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Music metadata management - &lt;code&gt;musicbrainz picard&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Bookmark management - &lt;a href=&#34;https://github.com/jarun/buku&#34;&gt;&lt;code&gt;buku&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Terminal file-manager - &lt;a href=&#34;https://wiki.archlinux.org/title/Lf&#34;&gt;&lt;code&gt;lf&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Terminal image preview - &lt;a href=&#34;https://github.com/ueber-devel/ueberzug&#34;&gt;&lt;code&gt;ueberzug&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Calendar management - &lt;a href=&#34;https://github.com/pimutils/khal&#34;&gt;&lt;code&gt;khal&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/pimutils/vdirsyncer&#34;&gt;&lt;code&gt;vdirsyncer&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Password management - &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;&lt;code&gt;pass&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/carnager/rofi-pass&#34;&gt;&lt;code&gt;rofi-pass&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Music metadata management - &lt;a href=&#34;https://musicbrainz.org/doc/MusicBrainz_Picard&#34;&gt;&lt;code&gt;musicbrainz picard&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Backup management - &lt;a href=&#34;https://wiki.archlinux.org/title/Btrfs&#34;&gt;btrfs&lt;/a&gt; + &lt;a href=&#34;https://wiki.archlinux.org/title/snapper&#34;&gt;&lt;code&gt;snapper&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
 &lt;ul&gt;
@@ -167,7 +168,8 @@ This is also where you should start thinking of version controlling your code.&l
 &lt;/ul&gt;
 &lt;h3 id=&#34;web-services&#34;&gt;Web services&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;omnivore&lt;/code&gt; as my read-it-later app&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://omnivore.app/&#34;&gt;&lt;code&gt;omnivore&lt;/code&gt;&lt;/a&gt; as my read-it-later app&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://amplenote.com/&#34;&gt;&lt;code&gt;amplenote&lt;/code&gt;&lt;/a&gt; as my note-taking and task-management app&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
