@@ -6,8 +6,8 @@
 	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/style.css'>
 	<link rel="icon" href="/favicon.ico">
-	<meta name="description" content="Diff See my notes on Understanding Diff. To see the changes that are brought about by a particular commit in git, do the following:
-git diff &lt;parent-commit&gt;..&lt;current-commit&gt; Add &ndash;patch You can use the git add command with the -p option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the e option you can give to manually create a hunk.">
+	<meta name="description" content="Basic usage diff See my notes on Understanding Diff. To see the changes that are brought about by a particular commit in git, do the following:
+git diff &lt;parent-commit&gt;..&lt;current-commit&gt; add &ndash;patch You can use the git add command with the -p option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the e option you can give to manually create a hunk.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<meta charset="utf-8">
@@ -17,20 +17,35 @@ git diff &lt;parent-commit&gt;..&lt;current-commit&gt; Add &ndash;patch You can 
 <header><h1 id="tag_Git and related concepts">Git and related concepts</h1></header>
 <article>
 
-<h2 id="diff">Diff</h2>
+<h1 id="basic-usage">Basic usage</h1>
+<h2 id="diff">diff</h2>
 <p>See my notes on <a href="https://linnabraham.me/notes/understanding_diff/">Understanding Diff</a>.
 To see the changes that are brought about by a particular commit in git, do the following:</p>
 <pre tabindex="0"><code>git diff &lt;parent-commit&gt;..&lt;current-commit&gt;
-</code></pre><h2 id="add---patch">Add &ndash;patch</h2>
+</code></pre><h2 id="add---patch">add &ndash;patch</h2>
 <p>You can use the <code>git add</code> command with the <code>-p</code> option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the <code>e</code> option you can give to manually create a hunk.</p>
-<h2 id="submodules">Submodules</h2>
-<p>This is useful when you want to nest a git repo inside another.</p>
-<h2 id="github-actions">Github Actions</h2>
-<p>Allows you to have workflows attached to your git push commands.</p>
-<h2 id="tags">Tags</h2>
+<h2 id="rebase"><code>rebase</code></h2>
+<p>Say that you have cloned a github repo to two different machines. You work on one and push changes back to the remote (github). When you do the same from the other machine you might run into a <code>merge</code> conflict. To solve this, you would have to <code>pull</code> with <code>--rebase</code>.</p>
+<h2 id="merge"><code>merge</code></h2>
+<p>There are different merge strategies like <code>fast-forward</code>, <code>recursive</code> etc. For non-divergent branches, the default is <code>fast-forward</code>. This is the case when your local branch has no commits that are not there in the remote branch. For divergent branches, the default strategy is <code>recursive</code>.
+The <code>git pull</code> command  is basically doing a <code>git fetch</code> and a <code>git merge</code> combined.
+If you do not want to do a recursive merge, you can use <code>git merge --ff</code> or <code>git pull --ff</code>.</p>
+<h1 id="advanced-usage">Advanced usage</h1>
+<h2 id="amend-and-squash"><code>amend</code> and <code>squash</code></h2>
+<p>Both of these are basically rebase operations. One difference between them is that <code>amend</code> only changes the last commit whereas <code>squash</code> is used to combine multiple commits into single commit. Both are useful for keeping a clean commit history (Read more in the official git <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">docs</a>).
+Once you are familiar with the concepts you can start using <code>--fixup</code> commits and <code>--autosquash</code> flags in <code>rebase -i</code> to speed up things.</p>
+<h2 id="tags">tags</h2>
 <p>Useful when you want to tag your commits with a version number or name or something. Commit messages are often meant to describe the changes that were made. But when you want to associate
 a commit with a working version, tags are helpful.</p>
-<h2 id="pitfalls-to-avoid-when-using-git">Pitfalls to avoid when using Git</h2>
+<h2 id="git-prompt"><code>git-prompt</code></h2>
+<p>Download the <a href="https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh"><code>git-prompt</code></a> script provided by git somwhere in your machine and source it in your shell.
+After than you can customize your default prompt to show basic git information. Check the comments in the script for usage instruction.</p>
+<h1 id="optional-usage">Optional usage</h1>
+<h2 id="submodules">submodules</h2>
+<p>This is useful when you want to nest a git repo inside another.</p>
+<h2 id="github-actions">Github actions</h2>
+<p>Allows you to have workflows attached to your git push commands.</p>
+<h1 id="pitfalls-to-avoid-when-using-git">Pitfalls to avoid when using Git</h1>
 <p>If you have a working version of a code. Don&rsquo;t keep modifications that are uncommitted in your staging area. You can use <code>git stash</code> for this purpose.
 Once you have a clean repo <code>tag</code> the last commit as the one that has the working version. This is useful if you ever want to revist the state of your repo.
 If you have unmodified code lying around and some of those code are direct or indirect dependencies in your primary code you never know what was the actual state of your repo when you commited it. The commit are no longer a faithful representation.

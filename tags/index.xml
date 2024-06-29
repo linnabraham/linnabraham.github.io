@@ -80,7 +80,12 @@
 		<pubDate>Mon, 24 Jun 2024 15:04:48 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/notes/vim_tips/</guid>
-		<description>&lt;h3 id=&#34;some-useful-plugins-to-use-with-vim&#34;&gt;Some Useful Plugins to use with ViM&lt;/h3&gt;
+		<description>&lt;h3 id=&#34;default-features-of-vim&#34;&gt;Default features of ViM&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vimdiff&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;support for scp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-useful-plugins-to-use-with-vim&#34;&gt;Some useful plugins to use with ViM&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;gruvbox - A better colortheme than the default&lt;/li&gt;
 &lt;li&gt;markdown-preview - Preview markdown in vim&lt;/li&gt;
@@ -96,20 +101,35 @@
 		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/selected/git_and_related/</guid>
-		<description>&lt;h2 id=&#34;diff&#34;&gt;Diff&lt;/h2&gt;
+		<description>&lt;h1 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h1&gt;
+&lt;h2 id=&#34;diff&#34;&gt;diff&lt;/h2&gt;
 &lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
 To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add---patch&#34;&gt;Add &amp;ndash;patch&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add---patch&#34;&gt;add &amp;ndash;patch&lt;/h2&gt;
 &lt;p&gt;You can use the &lt;code&gt;git add&lt;/code&gt; command with the &lt;code&gt;-p&lt;/code&gt; option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the &lt;code&gt;e&lt;/code&gt; option you can give to manually create a hunk.&lt;/p&gt;
-&lt;h2 id=&#34;submodules&#34;&gt;Submodules&lt;/h2&gt;
-&lt;p&gt;This is useful when you want to nest a git repo inside another.&lt;/p&gt;
-&lt;h2 id=&#34;github-actions&#34;&gt;Github Actions&lt;/h2&gt;
-&lt;p&gt;Allows you to have workflows attached to your git push commands.&lt;/p&gt;
-&lt;h2 id=&#34;tags&#34;&gt;Tags&lt;/h2&gt;
+&lt;h2 id=&#34;rebase&#34;&gt;&lt;code&gt;rebase&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Say that you have cloned a github repo to two different machines. You work on one and push changes back to the remote (github). When you do the same from the other machine you might run into a &lt;code&gt;merge&lt;/code&gt; conflict. To solve this, you would have to &lt;code&gt;pull&lt;/code&gt; with &lt;code&gt;--rebase&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;merge&#34;&gt;&lt;code&gt;merge&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;There are different merge strategies like &lt;code&gt;fast-forward&lt;/code&gt;, &lt;code&gt;recursive&lt;/code&gt; etc. For non-divergent branches, the default is &lt;code&gt;fast-forward&lt;/code&gt;. This is the case when your local branch has no commits that are not there in the remote branch. For divergent branches, the default strategy is &lt;code&gt;recursive&lt;/code&gt;.
+The &lt;code&gt;git pull&lt;/code&gt; command  is basically doing a &lt;code&gt;git fetch&lt;/code&gt; and a &lt;code&gt;git merge&lt;/code&gt; combined.
+If you do not want to do a recursive merge, you can use &lt;code&gt;git merge --ff&lt;/code&gt; or &lt;code&gt;git pull --ff&lt;/code&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;advanced-usage&#34;&gt;Advanced usage&lt;/h1&gt;
+&lt;h2 id=&#34;amend-and-squash&#34;&gt;&lt;code&gt;amend&lt;/code&gt; and &lt;code&gt;squash&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Both of these are basically rebase operations. One difference between them is that &lt;code&gt;amend&lt;/code&gt; only changes the last commit whereas &lt;code&gt;squash&lt;/code&gt; is used to combine multiple commits into single commit. Both are useful for keeping a clean commit history (Read more in the official git &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History&#34;&gt;docs&lt;/a&gt;).
+Once you are familiar with the concepts you can start using &lt;code&gt;--fixup&lt;/code&gt; commits and &lt;code&gt;--autosquash&lt;/code&gt; flags in &lt;code&gt;rebase -i&lt;/code&gt; to speed up things.&lt;/p&gt;
+&lt;h2 id=&#34;tags&#34;&gt;tags&lt;/h2&gt;
 &lt;p&gt;Useful when you want to tag your commits with a version number or name or something. Commit messages are often meant to describe the changes that were made. But when you want to associate
 a commit with a working version, tags are helpful.&lt;/p&gt;
-&lt;h2 id=&#34;pitfalls-to-avoid-when-using-git&#34;&gt;Pitfalls to avoid when using Git&lt;/h2&gt;
+&lt;h2 id=&#34;git-prompt&#34;&gt;&lt;code&gt;git-prompt&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Download the &lt;a href=&#34;https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh&#34;&gt;&lt;code&gt;git-prompt&lt;/code&gt;&lt;/a&gt; script provided by git somwhere in your machine and source it in your shell.
+After than you can customize your default prompt to show basic git information. Check the comments in the script for usage instruction.&lt;/p&gt;
+&lt;h1 id=&#34;optional-usage&#34;&gt;Optional usage&lt;/h1&gt;
+&lt;h2 id=&#34;submodules&#34;&gt;submodules&lt;/h2&gt;
+&lt;p&gt;This is useful when you want to nest a git repo inside another.&lt;/p&gt;
+&lt;h2 id=&#34;github-actions&#34;&gt;Github actions&lt;/h2&gt;
+&lt;p&gt;Allows you to have workflows attached to your git push commands.&lt;/p&gt;
+&lt;h1 id=&#34;pitfalls-to-avoid-when-using-git&#34;&gt;Pitfalls to avoid when using Git&lt;/h1&gt;
 &lt;p&gt;If you have a working version of a code. Don&amp;rsquo;t keep modifications that are uncommitted in your staging area. You can use &lt;code&gt;git stash&lt;/code&gt; for this purpose.
 Once you have a clean repo &lt;code&gt;tag&lt;/code&gt; the last commit as the one that has the working version. This is useful if you ever want to revist the state of your repo.
 If you have unmodified code lying around and some of those code are direct or indirect dependencies in your primary code you never know what was the actual state of your repo when you commited it. The commit are no longer a faithful representation.
@@ -133,6 +153,7 @@ This is also where you should start thinking of version controlling your code.&l
 &lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Dmenu&#34;&gt;&lt;code&gt;dmenu&lt;/code&gt;&lt;/a&gt; as my application switcher&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Sxhkd&#34;&gt;&lt;code&gt;sxhkd&lt;/code&gt;&lt;/a&gt; for keyboard shortcuts&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Click here for my &lt;a href=&#34;https://github.com/linnabraham/dotfiles-primary&#34;&gt;primary dotfiles&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Music player - &lt;a href=&#34;https://wiki.archlinux.org/title/Music_Player_Daemon&#34;&gt;&lt;code&gt;mpd&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/SoongNoonien/plattenalbum&#34;&gt;plattenablum&lt;/a&gt;&lt;/li&gt;
@@ -159,6 +180,7 @@ This is also where you should start thinking of version controlling your code.&l
 &lt;li&gt;Password management - &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;&lt;code&gt;pass&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/carnager/rofi-pass&#34;&gt;&lt;code&gt;rofi-pass&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Music metadata management - &lt;a href=&#34;https://musicbrainz.org/doc/MusicBrainz_Picard&#34;&gt;&lt;code&gt;musicbrainz picard&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Backup management - &lt;a href=&#34;https://wiki.archlinux.org/title/Btrfs&#34;&gt;btrfs&lt;/a&gt; + &lt;a href=&#34;https://wiki.archlinux.org/title/snapper&#34;&gt;&lt;code&gt;snapper&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dotfiles management - &lt;a href=&#34;https://yadm.io/&#34;&gt;&lt;code&gt;yadm&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
 &lt;ul&gt;
@@ -276,6 +298,7 @@ When you set up github actions, Github has a computer that serves the content of
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Information-Theory-Inference-Learning-Algorithms/dp/0521642981&#34;&gt;Information Theory, Inference and Learning Algorithms&lt;/a&gt; by David J. C. MacKay&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Introduction-Statistical-Learning-Applications-Statistics/dp/3031387465/&#34;&gt;An Introduction to Statistical Learning&lt;/a&gt; by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani &amp;amp; Jonathan Taylor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.in/Artificial-Intelligence-Modern-Approach-4e/dp/9356063575/&#34;&gt;iArtificial Intelligence: A Modern Approach&lt;/a&gt; by Stuart Russell &amp;amp; Peter Norvig&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Non-book recommendations:&lt;/p&gt;
 &lt;ul&gt;
