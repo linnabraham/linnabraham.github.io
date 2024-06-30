@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Probabilities in Machine Learning | Linn Abraham&#39;s homepage</title>
+	<link rel="canonical" href="https://linnabraham.me/">
+	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Introduction The concept of probability becomes more complicated the further you try to understand it. There is no one answer to the question - What is meant by &ldquo;probability&rdquo;. There are in fact entire schools of thoughts when it comes to the interpretation of what are probabilities and how to use them. Two of the more popular ones are known as Frequentism&#39; and Bayesianism&rsquo;. Christopher Bishop in his highly acclaimed textbook on Machine Learning, mentions probability theory, decision theory and information theory as three important tools when it comes to learning machine learning.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+</head>
+<body>
+<main>
+<header><h1 id="tag_Probabilities in Machine Learning">Probabilities in Machine Learning</h1></header>
+<article>
+
+<h1 id="introduction">Introduction</h1>
+<p>The concept of probability becomes more complicated the further you try to understand it.  There is no one answer to the question - What is meant by &ldquo;probability&rdquo;. There are in fact entire schools of thoughts when it comes to the interpretation of what are probabilities and how to use them. Two of the more popular ones are known as <code>Frequentism' and </code>Bayesianism&rsquo;. Christopher Bishop in his highly acclaimed textbook on Machine Learning, mentions probability theory, decision theory and information theory as three important tools when it comes to learning machine learning. This article motivates the need to pursue probability in machine learning by first listing some areas where you encounter the concept. Then it tries to give an overview of the difficulties in understanding probabilities by listing some of the different interpretation of probabilities. Afterwards it introduces two concepts that are crucial to understanding probabilities - the concept of a probability distribution function and Bayes theorem which is one of the most important concepts in probability theory. The last two discussions are heavily inspired from the youtube videos by 3Blue1Brown</p>
+<h1 id="use-in-machine-learning">Use in Machine Learning</h1>
+<p>Randomness and probabilistic methods come up a lot in machine learning.  Here are a few of the more common ones. There are learning algorithms that make use of randomness and probability concepts such as the Random Forest, the Naive Bayes Classifier or even Bayesian Neural Networks. Genetic algorithms are optimization algorithms inspired by randomness and natural selection. Gaussian processes are a type of probabilistic model used for regression and classification tasks. Bootstrapping is a resampling technique used in ensemble methods like bagging. Expectation Maximization or EM is an optimization algorithm used in unsupervised learning especially in clustering and Gaussian Mixture Models (GMM). Dropout is a common regularization technique used in neural networks that drops random neurons during the training process.</p>
+<p>Randomness is also important during the training process for initialization of model weights, train-test splitting of datasets, used in optimization methods such as stochastic gradient descent and even in random search during hyper-parameter tuning. Often in ML, we try to interpret the outputs of activation functions etc. as probabilities. A related aspect is how we design or interpret the common evaluation metrics that comes up in discriminant models like sensitivity, specificity etc. This is one area where we need to use concepts from probability such as Bayes theorem for properly understanding the results.</p>
+<h1 id="physical-and-evidential-probabilities">Physical and Evidential Probabilities</h1>
+<p>There are two ways in which probabilities are used, which may be called physical (objective or frequency) and evidential (Bayesian) probabilities. Physical probabilities are associated with physical systems that are considered random in nature such as rolling dice or radioactive decay. There are events associated with such systems that happen at a fixed rate or relative frequency. Physical probabilities are invoked to explain such stable frequencies. This is the kind of probability that most people are introduced to during their primary education.</p>
+<p>The other kind of probability, evidential probability, can be considered as a degree of belief in a statement as supported by available evidence. It can be associated to any statement, even one without any kind of randomness involved. This is a kind of probability that is used very informally in daily life but has more importance in academia and research.</p>
+<h1 id="interpretations-of-probabilities">Interpretations of Probabilities</h1>
+<p>The following are the four main interpretations of probabilities.</p>
+<ul>
+<li>
+<p>Classical Interpretation (A priori) - This interpretation is attributed to Pierre-Simon Laplace who assumed by what has been called the ``principle of insufficient reason&quot;, that all possible outcomes of an event are equally likely if there are no reasons to assume otherwise. Probability of an event is then the ratio of number of outcomes favourable to the event to the total number of outcomes possible.</p>
+</li>
+<li>
+<p>Empirical Interpretation (A posteriori) - This interpretation is sometimes called Frequentist. However the term is also used to refer to ``physical probability&quot; as a whole when contrasting it with Bayesian probabilities. According to this, the probability of an event is the relative frequency of occurence after repeating the process for a large number of times under similar conditions.</p>
+</li>
+<li>
+<p>Subjective Interpretation - As mentioned above probabilities can be used as a measure of the degree of belief of an individual who is assessing the uncertainty of a situation.</p>
+</li>
+<li>
+<p>Axiomatic Interpretation - The mathematics of probability can be developed on an entirely axiomatic basis that is independent of any interpretation.</p>
+</li>
+</ul>
+<h1 id="interpreting-probability-density-functions-pdf">Interpreting Probability Density Functions (PDF)</h1>
+<p>Probability density functions are ubiquitous in statistics and probability theory. To motivate the need for such a function we need to shift our thinking from a discrete context to a continuous context. When you consider experiments such as tossing a coin or rolling a dice etc. the outcomes you are interested in are often discrete. Like for e.g., the probability of getting two heads when a coin is tossed 5 times. However one can imagine a case where the outcomes can take any value in a continuous range. In such a case no matter how small a value you assign to each of these outcomes, you would run into the following problem. The sum of all these probabilities would add upto infinity. This means that in such a scenario, it no longer makes sense to talk about probabilities of individual values. However if we consider a histogram where the height of the bins represents - the probability that the outcome is within a range specified by the bin widths, then we no longer have a problem. It is the area of each bin that gives the probability associated with that range. When you have bins of smaller and smaller widths you have a more refined knowledge of the probabilities in each individual bin. And you also end up with a smooth curve. But what is the height of this curve that we have ended up with? Since the width of a bin times the height is a probability, the quantity in the y-axis would have a dimension of probability over length. Hence what he have can be called a probability density. Since the probabilities are represented by areas of the individual rectangles, the total area under the curve adds upto 1.</p>
+<p>When trying to interpret the probability distribution function as mentioned you might run into another problem. The probability of getting an exact value, which is the area of a very thin slice becomes zero by definition. To understand what is happening here, note that, if in the discrete case the probability of the outcome falling in one out of a collection of values was just the sum of the individual probabilities.  In the continuous case, the probability of your outcome taking a range of values is no longer the sum of individual probabilities. Instead the probabilities associated with the ranges themselves are the fundamental primitive objects we are dealing with here. In order to make more sense of this you might have to learn a bit of measure theory a branch of mathematics which provides the foundational framework for the rigorous mathematical development of probability theory.</p>
+<h1 id="bayes-theorem">Bayes Theorem</h1>
+<h2 id="when-to-use-bayes-theorem">When to use Bayes theorem</h2>
+<p>One of the most important formulas in probability theory is the Bayes formula. The code idea behind the base theorem is that &ldquo;Evidence should not determine beliefs but update them&rdquo;. Before we try to understand what the formula is telling us let us see when it would be useful to actually apply the formula. Suppose you are shown the following description of a person called Steve. <code>Steve is very shy and withdrawn, invariably helpful but with very little interest in people or in the world of reality. A meek and tidy soul, he has a need for order and structure, and a passion for detail. If you are then asked the following question, </code>Which of the following do you think more likely: &ldquo;Steve is a librarian&rdquo; or &ldquo;Steve is a farmer&rdquo; ?  Which one might you choose?</p>
+<p>This example is part of a study conducted by Psychologists David Kahneman and Amos Tversky. Their study showed that most people go with the option of Steve being a librarian. Although it is true that these traits align with the stereotypical view of a librarian than a farmer, the authors of the study show that it is irrational to come to that judgement. Their point was that almost no one thought of using the information about the ratio of farmers to librarians in their judgements. The question is not whether the partcipants had information about those statistics but whether they thought about estimating it?</p>
+<h2 id="how-to-use-bayes-theorem">How to use Bayes theorem</h2>
+<p>Let&rsquo;s say you did estimate the ratio of farmers to librarians and came up with the number 20:1.  So let us start with a sample size of 210 people. Of which there are 200 farmers and 10 librarians. Next you think about all the librarians you know and come to the estimate that 40 percent of all librarians fit the description and 10 percent of all farmers fit the same description. That is you are still saying that a librarian is 4 times more likely to fit the description than a farmer. However if you now try to find out the probability that a random person who fits the description is a librarian. It is given by,</p>
+$$\frac{\textrm{ 4 Librarians who fit the description}}{\textrm{ 4 Librarians + 20 Farmers who fit the description}}$$
+<p>Which is only 16 percent. Whereas the probability that the random person would be a farmer would be 84 percent. The key takeaway here is that new evidence should not determine your beliefs in a vaccuum; it should update prior beliefs.  So the way to understand such problem is start to with all possibilities (210). Then seeing evidence restricts the space of possibilities ( 4 + 20).</p>
+<h2 id="motivating-the-bayes-formula">Motivating the Bayes formula</h2>
+<p>How can we generalize from this example to reach a formula? The general scenarios is the following. You have some hypothesis (or model) like the hypothesis that <code>Steve is a Librarian&quot; or </code>The coin is fair&quot;. You have some evidence (data or observation) like the description about Steve that you obtained. You are mostly interested in knowing the probability that your hypothesis is true given the evidence. This is what you computed quite easily in the example above. The probability that ``Steve is a Librarian&rsquo;&rsquo; given the description about Steve which we can now denote \(P (H|E) \).
+w
+How did we arrive at the numerator which was 4? By first calculating the  probability that the hypothesis holds without considering any of the evidence. This is called the prior and denoted \(P(H)\).
+In our case we calculated the prior by taking the ratio of all librarians to farmers which came to be \(1/21\). After that we used the proportion of librarians that fit the description. This is the probability of seeing the evidence given the hypothesis is true. That is, if it is given that Steve is a librarian, we then limit our space of possibilities to the space of all librarians and ask how likely it is for a random librarian to have this description.
+This is also called the likelihood and in our case it was \(4/10\).  Now by multiplying the total number of people times the prior times the likelihood we obtain the numerator.</p>
+<p>In the denominator we again have the same term. But also an additional term which contains the likelihood of observing the evidence if the hypothesis is not true, which in our case was \(1/10\). Along with this we need to multiply the the prior corresponding to the case where our hypothesis is not true and the total number of people. So finally putting all these words into an equation we have,
+</p>
+$$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
+<p>References:</p>
+<p><a href="https://youtu.be/HZGCoVF3YvM">Bayes theorem, the geometry of changing beliefs</a></p>
+
+
+<div id="nextprev">
+<a href="/posts/beginners_guide_to_ml/"><div id="prevart">Previous:<br>Beginner&#39;s Guide to Machine Learning</div></a>
+</div>
+
+</article>
+
+</main>
+
+<footer>
+	<a href="https://linnabraham.me/">https://linnabraham.me/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>

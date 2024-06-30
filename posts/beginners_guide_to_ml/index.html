@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Beginner&#39;s Guide to Machine Learning | Linn Abraham&#39;s homepage</title>
+	<link rel="canonical" href="https://linnabraham.me/">
+	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="This article is targeted towards people from a science (mainly astrophysics) background with very little hands-on experience in Python programming, especially tasks related to machine learning projects. The goal is to get acquainted with the jargons of the trade and to understand where everything fits in, in the grand scheme of things. Maybe its helpful to think of this as a user&rsquo;s manual for jump starting your machine learning journey. However before we move on to the implementation side of things it is better if we address two fundamental questions.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+</head>
+<body>
+<main>
+<header><h1 id="tag_Beginner&#39;s Guide to Machine Learning">Beginner&#39;s Guide to Machine Learning</h1></header>
+<article>
+
+<p>This article is targeted towards people from a science (mainly astrophysics) background with very little hands-on experience in Python programming, especially tasks related to machine learning projects.  The goal is to get acquainted with the jargons of the trade and to understand where everything fits in, in the grand scheme of things. Maybe its helpful to think of this as a user&rsquo;s manual for jump starting your machine learning journey. However before we move on to the implementation side of things it is better if we address two fundamental questions. One - Why use machine learning at all? What problems does it solve? Two - Why Python? If you find yourselves already convinced about these questions do skip ahead.</p>
+<h1 id="why-machine-learning">Why machine learning?</h1>
+<p>Most things that we as humans learn cannot be put into a sequence of instructions to be followed word to word by another human or even a machine. Think about how you learnt to walk, speak, identify plants, birds and animals, distinguish a familiar face from amidst a crowd of faces and so on. We know that this ability of the human brain has to do with at least two things, the data that was supplied and the the millions of neurons in the brain. So we can think of machine learning or ML as a way of harnessing this power of the human brain to solve problems without explicit instructions but with data and learning algorithms. The current goal is not as ambitious as building a replacement for our brain but building smaller brains dedicated for specific tasks.  We can increasingly find  people applying ML to niche problems in all walks of life with the help of curated data that is specific to whatever problem they might have. However remember that ML is no magic bullet that can solve any issue thrown at it. It helps us to predict patterns in data which are difficult for the average human, by delegating the effort to computers. However it fails when the problem itself has no patterns - think of why ML cannot help you to hack the share market. Also it fails when there are patterns, but the data you have is not enough to capture the variance.</p>
+<h2 id="machine-learning-vs-deep-learning">Machine learning vs Deep learning</h2>
+<p>Deep learning refers to a special class of machine learning techniques. Although there is no strict boundary here, there are some cues that help us distinguish between these. Most deep learning techniques make use of neural networks. Often there are layers of these networks stacked on top of each other that makes them “deep&quot;. One advantage that comes with using neural  networks versus traditional learning algorithms is that they are quite versatile and do not require data to be transformed to the specific requirements of the underlying algorithm. However this is often where the algorithms lose its interpretability. Hence the coinage that neural networks are black boxes.</p>
+<h2 id="cuda-and-the-gpu-revolution">CUDA and The GPU revolution</h2>
+<p>When PCs transformed from being mostly text based to being heavily dependent on graphics, people developed CPUs  that are specialized for matrix manipulations. Since that is what essential a computer screen is, a matrix of pixel intensity values. Such specialized CPUs are called Graphics Processing Units or GPUs. The GPU market was mostly driven by the demands of the gaming industry for high-end graphics. The real breakthrough in deep learning occurred when researchers found a use for these in training neural networks. NVIDIA one of the GPU manufacturing company opened up the use of its GPU for anyone interested in doing such things by introducing a platform called CUDA. The python deep learning libraries that we are going to get introduced to make use of the CUDA platform in order to run code on the GPUs.</p>
+<h1 id="why-python">Why Python?</h1>
+<p>A programming language is fundamentally a language that helps us speak to the machine. So does it matter which language one uses or are all languages created equal? You probably guessed the answer - it does.  Each language comes with it&rsquo;s own set of advantages and disadvantages. The conveniences, the learning curve, the performance etc. Let us try to understand what some of the strengths and weakness of Python are when it comes to coding machine learning algorithms. Most importantly what are the trade-offs?</p>
+<h2 id="software-libraries">Software libraries</h2>
+<p>When one makes heavy use of software libraries one saves time by not reinventing the wheel.  Python comes with a standard &ldquo;library&rdquo; of code that is used for implementing things widely used in the community like math functions. However when it comes to specialized uses like astronomy, machine learning etc., there are other software libraries that are available on the internet in places like PyPi, anaconda, github and the like. These external software libraries or software dependencies need to be installed using package managers like pip or conda (for the curious,  PIP is a recursive acronym for Pip Installs Packages).</p>
+<p>The disadvantage of using external software libraries is that the code is no longer in one’s control and very often subject to change.  Python itself is a  very dynamic language that keeps changing at a fast pace. As of writing this article the latest version of Python is 3.12. On top that now you need to contend with the update pace of these external libraries. In science where reproducibility is critical, how do you make sure that your code is reproducible by someone at a later point in time? This is in fact very difficult. There is no guarantee that even if you have someone&rsquo;s python code you would be able to run it. This is why you often find files named requirements.txt or environment.yml etc. which is used to specify version numbers for all the external library code used in a project and that is guaranteed to work. Now the onus is on the user to install the exact versions specified in order to run the code. So far so good but if you were to run multiple scripts like this every time one would have to uninstall and reinstall specific version of external packages. This motivates the need for a Python &ldquo;virtual environment&rdquo;.  Pip or Conda, the Python package managers also allow us to create named virtual environments where we can have different version of same packages.  Think of virtual environments like isolated containers where different versions of the same software can live without affecting each other and your system. Be aware that pip and conda are not equivalent, conda does much more than pip . Conda has at least three different advantages compared to pip. It can managed dependencies and save you from dependency hell.  It can install multiple version of Python whereas pip works with existing version of Python on your system. It can also install non-Python software dependencies.</p>
+<h2 id="code-wrappers">Code wrappers</h2>
+<p>An often overlooked advantage of Python is its readability. Python code is said to be almost like pseudo code. The basics of a programming language can be learnt in a considerably small amount of time. A big chunk of time is spent understanding the code written by others and troubleshooting it&rsquo;s usage. Time is mostly spend in discussion forums like stackoverflow to understand the error messages spit out by the code you are trying to fix and seeing other people’s solutions. This is one place where Python&rsquo;s readability shines. One possible downside of it&rsquo;s readbility is that Python is slower than other languages such as C, Fortran etc. However the situation is not very bad since there exists a lot of Python wrapper code that just provides an interface for code written in a faster language. This is very often encountered in machine learning where a lot of the actual heavy lifting is done by faster languages like C and C++.  We pass inputs to the code written in Python, the processing is done by code written is a faster language and finally passed back to the calling python function. A popular example is OpenCV where the python code exists to pass data and arguments to underlying C++ code.</p>
+<h2 id="setting-up-your-computer">Setting up your computer</h2>
+<p>You need a computer at two different stages of your machine learning journey - one while developing your code and one for the training of your ML algorithms. People use ordinary systems for developing code and delegate the training to much powerful workstations or servers. If you do not have access to such powerful hardware do not worry, there are free and paid options available that are much better than owning your own hardware. For code development, if you have the budget to own a laptop with a dedicated graphics card, make sure you only choose laptops that supports the NVIDIA GPUs. But it is not strictly required to own a beefy system. Even a machine which has just an Intel i3 processor or its Ryzen equivalent and a 4GB RAM would suffice. If your laptop comes preinstalled with Windows, try to get it to dual boot a Linux OS. Linux is your best friend when it comes to the world of code development. The term Linux doesn&rsquo;t refer to any particular OS that you can install. However there are various flavours or distributions of Linux which you can actually install on your machine. Ubuntu is one of the most popular Linux distributions. However if you are looking for something more interesting than Ubuntu, ArchLinux based distributions like Endeavour OS are a good option. The Arch User Repository or (AUR) is one of the best features of Arch Linux that makes it easy for beginners to install several packages that are most often missing from official Linux repositories.</p>
+<h1 id="tools-of-the-trade">Tools of the Trade</h1>
+<h2 id="text-editor-or-ide">Text editor or IDE</h2>
+<p>One of very first decision we need to make is regarding how to write and run the code. The simplest and most elegant way to write code is as a script (text file with .py extension) that is run from a terminal program. An IDE or integrated development environment is a much more sophisticated code editor. One of the popular IDEs is jupyterlab or jupyter notebook which is a web browser based IDE. The name is an acronym for Julia, Python and R - the three languages which it supports. What is special about this is it that it provides a way to store the history or sequence of outputs that were generated when the code was run. Hence it is an excellent teaching tool.</p>
+<h2 id="essential-libraries-for-the-astrophysicist">Essential libraries for the Astrophysicist</h2>
+<ul>
+<li>NumPy - One of the most essential packages or libraries that extends Python by adding the ndarray or N-dimensional array datatype and a host of associated functions for manipulating them.</li>
+<li>Pandas - Tabular data is not strictly numerical data but a mix of numerical and string data. Especially we would like to index value from tables using column names which are strings. Pandas adds support for tabular data using the DataFrame datatype.</li>
+<li>Matplotlib - A rich library that has functions for almost any kind of data visualization that you can imagine.</li>
+<li>PIL - Python Imaging Library allows you to read data from images stored on your disk to NumPy arrays. It has lots of functions designed to work on images that can supplements NumPy&rsquo;s matrix manipulation functions.</li>
+<li>Scipy - Library of functions for scientific use like special functions, statistical distributions, signal processing etc.</li>
+<li>Astropy - Library of functions for astronomy related uses.</li>
+</ul>
+<h2 id="popular-librariesplatformsframeworks-for-ml">Popular Libraries/Platforms/Frameworks for ML</h2>
+<ul>
+<li>Scikit-learn - Library of utility functions and implementations of traditional ML algorithms like RandomForest, SVM, MLP etc.</li>
+</ul>
+<p>Moving on to deep learning techniques, Python has two frameworks for deep learning Tensorflow (aka Tensorflow/Keras) and PyTorch. These are called called platforms or frameworks rather than libraries because these are whole systems rather than just a library of functions. Depending on your choice there will be a lot of change in the way your code will be written and run. Tensorflow was initially developed by Google whereas PyTorch by Facebook. You might now be left hanging with a question - Which one to choose? Personally I find PyTorch better for the beginner. It has a bigger library of predefined model architectures which makes sure hat the beginner is not subjected to the pain of implementing complex network architectures by themselves. At the same time in certain places the lack of a single functions that abstracts away all the complexities of  a model fitting process does good to the beginner in that he gets to know the inner working of the deep learning workflow.</p>
+<h1 id="where-to-get-more-help">Where to get more help?</h1>
+<p>In this section I will list resources you can use to learn about the things that has been already discussed and more things to read.</p>
+<ul>
+<li>scipylectures - Getting started with Python and learning scientific packages like Numpy, Matplotlib and Scipy.</li>
+<li>exercism - A website for learning the basics of Python using exercises.</li>
+<li>pyimagesearch  - Adrian&rsquo;s blog for Computer Vision</li>
+<li>Book: Machine Learning: An Algorithmic Perspective - by Stephen Marsland which comes with lot of Python example code for implementing traditional ML algorithms.</li>
+<li>Book: Deep Learning with Python - Introduction to Deep Learning using Python and the Keras framework by the founder of the Keras framework.</li>
+<li>googlecolab - Free resource for developing and/or training ML models. Jupyter notebook running on a virtual machine in the cloud. Note that a single code can run only upto a maximum of 12 hours.</li>
+<li>Tensorflow tutorials</li>
+<li>coursera  &amp; udacity - Machine Learning Courses</li>
+</ul>
+
+
+<div id="nextprev">
+<a href="/posts/ai_over_coffee/"><div id="prevart">Previous:<br>AI over coffee</div></a>
+<a href="/posts/probabilities_in_ml/"><div id="nextart">Next:<br>Probabilities in Machine Learning</div></a>
+</div>
+
+</article>
+
+</main>
+
+<footer>
+	<a href="https://linnabraham.me/">https://linnabraham.me/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>

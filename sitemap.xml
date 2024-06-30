@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linnabraham.me/posts/</loc>
+    <lastmod>2024-06-30T10:07:20+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/posts/probabilities_in_ml/</loc>
+    <lastmod>2024-06-30T10:07:20+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/posts/beginners_guide_to_ml/</loc>
+    <lastmod>2024-06-30T09:58:24+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/posts/ai_over_coffee/</loc>
+    <lastmod>2024-06-30T09:51:42+05:30</lastmod>
+  </url><url>
     <loc>https://linnabraham.me/personal/</loc>
     <lastmod>2024-06-26T17:29:48+05:30</lastmod>
   </url><url>
@@ -39,9 +51,6 @@
     <lastmod>2024-06-23T10:34:25+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/posts/website/</loc>
-    <lastmod>2024-06-22T20:47:07+05:30</lastmod>
-  </url><url>
-    <loc>https://linnabraham.me/posts/</loc>
     <lastmod>2024-06-22T20:47:07+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/selected/books/</loc>
