@@ -11,6 +11,45 @@
 	
 	
 	<item>
+		<title>Maximum likelihood versus Bayesian</title>
+		<link>https://linnabraham.me/posts/maximum_likelihood/</link>
+		<pubDate>Sun, 30 Jun 2024 12:39:45 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/posts/maximum_likelihood/</guid>
+		<description>&lt;p&gt;Given that you observed a set of data points \(\mathbf{x_{1}}\),&amp;hellip;,\(\mathbf{x_{N}}\), can you produce the probability distribution function from which it was sampled?
+This problem is known as &lt;em&gt;density estimation&lt;/em&gt; and is related to the problem of model selection, one of the central problems in pattern recognition.
+However, it is to be considered if this is a sensible question to ask. Since any probability distribution that is non-zero at each of the sampled data points, is a possible candidate.&lt;/p&gt;
+&lt;p&gt;Parametric distributions are a subset of probability distributions which can be completely defined by a small set of parameters.
+For example, Gaussian distributions are defined by their mean and variance.
+So for the sake of simplicity, let us assume that the nature of the sampled probability distribution is Gaussian.
+The Gaussian distribution is defined by,
+&lt;/p&gt;
+$$ N(x|\mu, \sigma^{2}) = \frac{1}{(2\pi\sigma^{2})^{1/2}} \exp{\{-\frac{1}{2\sigma^2}(x-\mu)^{2}\}} $$
+&lt;p&gt;
+Then our goal reduces to estimating the model parameters \(\mu\) and \(\sigma\).
+The joint probability of two independent events is given by the product of the marginal probabilities for each event separately.
+Since the samples are always assumed to be independently and identically distributed (iid),
+the probability of observing the data given, the mean \(\mu\) and variance \(\sigma^{2}\).&lt;/p&gt;
+$$ p(\mathbf{x}|\mu,\sigma^{2}) = \Pi_{n=1}^{N} N(x_n|\mu, \sigma^{2}) $$
+&lt;p&gt;
+This is called the likelihood function, considered as a function of \(\mu\) and \(\sigma^{2}\).
+That is, the likelihood of observing the data, given the model parameters.
+Once we have such a function of the model parameters, it is straight forward to maximize it and estimate the parameters.
+In practice, we always maximize the log of this function.
+Since the log is a monotically increasing function, maximizing the log achieves the same as maximizing the original function.
+This, apart from simplifying the mathematical analysis, helps with numerical precision of computer which is prone to underflow when dealing with the product of very small numbers.&lt;/p&gt;
+&lt;p&gt;It might seem strange that one is asked to maximize the data given the parameters, instead of maximizing the parameters, given the data.
+Anyhow, doing the analysis, one finds that the maximum likelihood estimate of the mean is given by,
+&lt;/p&gt;
+$$ \mu_{ML} = \frac{1}{N} \Sigma_{n=1}^{N}x_{n} $$
+&lt;p&gt;
+Which is effectively the sample mean.
+Similarly, the maximum likelihood estimate of the variance turns out to be the sample variance.&lt;/p&gt;
+&lt;p&gt;We can apply the same&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Probabilities in Machine Learning</title>
 		<link>https://linnabraham.me/posts/probabilities_in_ml/</link>
 		<pubDate>Sun, 30 Jun 2024 10:07:20 +0530</pubDate>
@@ -186,6 +225,7 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 		<description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://trakt.tv/users/linnabraham&#34;&gt;Trakt.tv&lt;/a&gt; - Movies I have watched&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://linnabraham.me/grwidget/&#34;&gt;Bookshelf&lt;/a&gt; - Books I have read&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://linnabraham.me/grwidget_reading/&#34;&gt;Reading&lt;/a&gt; - Books I am currently reading&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/quotes/list?utf8=%E2%9C%93&amp;amp;sort=date_added&#34;&gt;Quotes&lt;/a&gt; - that are my favourite&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.last.fm/user/linnabraham/library/tracks&#34;&gt;Music&lt;/a&gt; - that I listen to&lt;/li&gt;
 &lt;/ul&gt;
@@ -274,15 +314,27 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 &lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
 To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add---patch&#34;&gt;add &amp;ndash;patch&lt;/h2&gt;
-&lt;p&gt;You can use the &lt;code&gt;git add&lt;/code&gt; command with the &lt;code&gt;-p&lt;/code&gt; option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the &lt;code&gt;e&lt;/code&gt; option you can give to manually create a hunk.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
+&lt;p&gt;The changes that you to immediately make to your git tracked files are always in the &lt;code&gt;unstaged&lt;/code&gt; state. To stage them, you need to use the &lt;code&gt;git add&lt;/code&gt; command.&lt;/p&gt;
+&lt;h2 id=&#34;commit&#34;&gt;commit&lt;/h2&gt;
+&lt;p&gt;You associate a group of changes, possibly to multiple files, to a &lt;code&gt;hash&lt;/code&gt; value. You also associate this &lt;code&gt;hash&lt;/code&gt; with a commit message for it to make sense to you why you made these changes.&lt;/p&gt;
 &lt;h2 id=&#34;rebase&#34;&gt;&lt;code&gt;rebase&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Say that you have cloned a github repo to two different machines. You work on one and push changes back to the remote (github). When you do the same from the other machine you might run into a &lt;code&gt;merge&lt;/code&gt; conflict. To solve this, you would have to &lt;code&gt;pull&lt;/code&gt; with &lt;code&gt;--rebase&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;merge&#34;&gt;&lt;code&gt;merge&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;There are different merge strategies like &lt;code&gt;fast-forward&lt;/code&gt;, &lt;code&gt;recursive&lt;/code&gt; etc. For non-divergent branches, the default is &lt;code&gt;fast-forward&lt;/code&gt;. This is the case when your local branch has no commits that are not there in the remote branch. For divergent branches, the default strategy is &lt;code&gt;recursive&lt;/code&gt;.
 The &lt;code&gt;git pull&lt;/code&gt; command  is basically doing a &lt;code&gt;git fetch&lt;/code&gt; and a &lt;code&gt;git merge&lt;/code&gt; combined.
 If you do not want to do a recursive merge, you can use &lt;code&gt;git merge --ff&lt;/code&gt; or &lt;code&gt;git pull --ff&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;restore&#34;&gt;&lt;code&gt;restore&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;This is a dangerous command that you need to handle with caution.
+This is often used to replace your unstaged changes with a commited version etc.&lt;/p&gt;
+&lt;h2 id=&#34;stash&#34;&gt;&lt;code&gt;stash&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Use this to stash away uncommitted changes. Often needed when using &lt;code&gt;git pull --rebase&lt;/code&gt;.
+Stash also has an option to save untracked files.&lt;/p&gt;
 &lt;h1 id=&#34;advanced-usage&#34;&gt;Advanced usage&lt;/h1&gt;
+&lt;h2 id=&#34;add---patch&#34;&gt;add &lt;code&gt;--patch&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;You can use the &lt;code&gt;git add&lt;/code&gt; command with the &lt;code&gt;-p&lt;/code&gt; option to stage specific hunks from the diff instead of staging all the changes made in a file. If git is not able to split the hunk the way you want there is the &amp;ldquo;e&amp;rdquo; option you can give to manually create a hunk.&lt;/p&gt;
+&lt;h2 id=&#34;restore---patch&#34;&gt;restore &lt;code&gt;--patch&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Restore also supports a patch mode with the &lt;code&gt;-p&lt;/code&gt; flag.&lt;/p&gt;
 &lt;h2 id=&#34;amend-and-squash&#34;&gt;&lt;code&gt;amend&lt;/code&gt; and &lt;code&gt;squash&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Both of these are basically rebase operations. One difference between them is that &lt;code&gt;amend&lt;/code&gt; only changes the last commit whereas &lt;code&gt;squash&lt;/code&gt; is used to combine multiple commits into single commit. Both are useful for keeping a clean commit history (Read more in the official git &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History&#34;&gt;docs&lt;/a&gt;).
 Once you are familiar with the concepts you can start using &lt;code&gt;--fixup&lt;/code&gt; commits and &lt;code&gt;--autosquash&lt;/code&gt; flags in &lt;code&gt;rebase -i&lt;/code&gt; to speed up things.&lt;/p&gt;
@@ -298,10 +350,13 @@ After than you can customize your default prompt to show basic git information. 
 &lt;h2 id=&#34;github-actions&#34;&gt;Github actions&lt;/h2&gt;
 &lt;p&gt;Allows you to have workflows attached to your git push commands.&lt;/p&gt;
 &lt;h1 id=&#34;pitfalls-to-avoid-when-using-git&#34;&gt;Pitfalls to avoid when using Git&lt;/h1&gt;
+&lt;h2 id=&#34;having-faithful-commits&#34;&gt;Having faithful commits&lt;/h2&gt;
 &lt;p&gt;If you have a working version of a code. Don&amp;rsquo;t keep modifications that are uncommitted in your staging area. You can use &lt;code&gt;git stash&lt;/code&gt; for this purpose.
 Once you have a clean repo &lt;code&gt;tag&lt;/code&gt; the last commit as the one that has the working version. This is useful if you ever want to revist the state of your repo.
 If you have unmodified code lying around and some of those code are direct or indirect dependencies in your primary code you never know what was the actual state of your repo when you commited it. The commit are no longer a faithful representation.
-This is also where you should start thinking of version controlling your code.&lt;/p&gt;
+This is also where you should start thinking of version controlling your data.&lt;/p&gt;
+&lt;h2 id=&#34;how-not-to-lose-your-data-while-learning-git&#34;&gt;How not to lose your data while learning git&lt;/h2&gt;
+&lt;p&gt;If you are a beginner who wants to try out certain git commands on your repo but afraid that you might lose data (you should be), then you have two options. Certain commands in git would have an associated &lt;code&gt;dry-run&lt;/code&gt; option. Check for that in the docs. If there is no such option then a fail safe alternative is to just create a test branch from your current branch. Test out the things there and once you are satisified, repeat it on the master. Then simply delete the test branch.&lt;/p&gt;
 </description>
 	</item>
 	
@@ -333,6 +388,7 @@ This is also where you should start thinking of version controlling your code.&l
 &lt;li&gt;Terminal emulator - &lt;code&gt;xfce4-terminal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Image viewer - &lt;a href=&#34;https://wiki.archlinux.org/title/Sxiv&#34;&gt;&lt;code&gt;sxiv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Graphical file manager - &lt;a href=&#34;https://github.com/lxqt/pcmanfm-qt&#34;&gt;&lt;code&gt;pcmanfm-qt&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remote desktop management - &lt;a href=&#34;https://rustdesk.com/&#34;&gt;&lt;code&gt;rustdesk&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;research-related-applications&#34;&gt;Research related applications&lt;/h3&gt;
 &lt;ul&gt;
@@ -529,6 +585,51 @@ When you set up github actions, Github has a computer that serves the content of
       &lt;/div&gt;
       &lt;script src=&#34;https://www.goodreads.com/review/grid_widget/5186783.Linn&#39;s%20bookshelf:%20read?cover_size=medium&amp;hide_link=&amp;hide_title=&amp;num_books=30&amp;order=d&amp;shelf=read&amp;sort=date_read&amp;widget_id=1719130852&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
+</description>
+	</item>
+	
+	<item>
+		<title></title>
+		<link>https://linnabraham.me/grwidget_reading/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>https://linnabraham.me/grwidget_reading/</guid>
+		<description>
+      &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+        .gr_grid_container {
+          /* customize grid container div here. eg: width: 500px; */
+        }
+
+        .gr_grid_book_container {
+          /* customize book cover container div here */
+          float: left;
+          width: 98px;
+          height: 160px;
+          padding: 0px 0px;
+          overflow: hidden;
+        }
+      &lt;/style&gt;
+      &lt;div id=&#34;gr_grid_widget_1719897843&#34;&gt;
+        &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
+            &lt;h2&gt;
+      &lt;a style=&#34;text-decoration: none;&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/review/list/5186783-linn?shelf=currently-reading&amp;utm_medium=api&amp;utm_source=grid_widget&#34;&gt;Linn&#39;s currently-reading book montage&lt;/a&gt;
+    &lt;/h2&gt;
+  &lt;div class=&#34;gr_grid_container&#34;&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The 48 Laws of Power&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/1303.The_48_Laws_of_Power&#34;&gt;&lt;img alt=&#34;The 48 Laws of Power&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1694722764l/1303._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Models: Attract Women Through Honesty&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/12633800-models&#34;&gt;&lt;img alt=&#34;Models: Attract Women Through Honesty&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375568311l/12633800._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;ആരാച്ചാർ | Aarachar&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/27867186-aarachar&#34;&gt;&lt;img alt=&#34;ആരാച്ചാർ | Aarachar&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460223255l/27867186._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Economic Facts and Fallacies&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/2064279.Economic_Facts_and_Fallacies&#34;&gt;&lt;img alt=&#34;Economic Facts and Fallacies&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1322121883l/2064279._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The God Delusion&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/14743.The_God_Delusion&#34;&gt;&lt;img alt=&#34;The God Delusion&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347220693l/14743._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Selfish Gene&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/61535.The_Selfish_Gene&#34;&gt;&lt;img alt=&#34;The Selfish Gene&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1366758096l/61535._SY160_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Emperor of All Maladies: A Biography of Cancer&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/11482377-the-emperor-of-all-maladies&#34;&gt;&lt;img alt=&#34;The Emperor of All Maladies: A Biography of Cancer&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1340886277l/11482377._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Sins of the Father&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/15927346-the-sins-of-the-father&#34;&gt;&lt;img alt=&#34;The Sins of the Father&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347994804l/15927346._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;രണ്ടാമൂഴം | Randamoozham&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/2757012-randamoozham&#34;&gt;&lt;img alt=&#34;രണ്ടാമൂഴം | Randamoozham&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1260916398l/2757012._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;br style=&#34;clear: both&#34;/&gt;&lt;br/&gt;&lt;a class=&#34;gr_grid_branding&#34; style=&#34;font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/user/show/5186783-linn&#34;&gt;Linn&#39;s favorite books »&lt;/a&gt;
+  &lt;noscript&gt;&lt;br/&gt;Share &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/&#34;&gt;book reviews&lt;/a&gt; and ratings with Linn, and even join a &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
+  &lt;/div&gt;
+
+      &lt;/div&gt;
+      &lt;script src=&#34;https://www.goodreads.com/review/grid_widget/5186783.Linn&#39;s%20currently-reading%20book%20montage?cover_size=medium&amp;hide_link=&amp;hide_title=&amp;num_books=20&amp;order=d&amp;shelf=currently-reading&amp;sort=date_added&amp;widget_id=1719897843&#34; type=&#34;text/javascript&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 </description>
 	</item>
 	
