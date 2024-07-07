@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Maximum Likelihood Versus Bayesian | Linn Abraham&#39;s homepage</title>
+	<link rel="canonical" href="https://linnabraham.me/">
+	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Given that you observed a set of data points \(\mathbf{x_{1}}\),&hellip;,\(\mathbf{x_{N}}\), can you produce the probability distribution function from which it was sampled? This problem is known as density estimation and is related to the problem of model selection, one of the central problems in pattern recognition. However, it is to be considered if this is a sensible question to ask. Since any probability distribution that is non-zero at each of the sampled data points, is a possible candidate.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+
+
+</head>
+<body>
+<main>
+<header><h1 id="tag_Maximum likelihood versus Bayesian">Maximum likelihood versus Bayesian</h1></header>
+<article>
+
+<p>Given that you observed a set of data points \(\mathbf{x_{1}}\),&hellip;,\(\mathbf{x_{N}}\), can you produce the probability distribution function from which it was sampled?
+This problem is known as <em>density estimation</em> and is related to the problem of model selection, one of the central problems in pattern recognition.
+However, it is to be considered if this is a sensible question to ask. Since any probability distribution that is non-zero at each of the sampled data points, is a possible candidate.</p>
+<p>Parametric distributions are a subset of probability distributions which can be completely defined by a small set of parameters.
+For example, Gaussian distributions are defined by their mean and variance.
+So for the sake of simplicity, let us assume that the nature of the sampled probability distribution is Gaussian.
+The Gaussian distribution is defined by,
+</p>
+$$ N(x|\mu, \sigma^{2}) = \frac{1}{(2\pi\sigma^{2})^{1/2}} \exp{\{-\frac{1}{2\sigma^2}(x-\mu)^{2}\}} $$
+<p>
+Then our goal reduces to estimating the model parameters \(\mu\) and \(\sigma\).
+The joint probability of two independent events is given by the product of the marginal probabilities for each event separately.
+Since the samples are always assumed to be independently and identically distributed (iid),
+the probability of observing the data given, the mean \(\mu\) and variance \(\sigma^{2}\).</p>
+$$ p(\mathbf{x}|\mu,\sigma^{2}) = \Pi_{n=1}^{N} N(x_n|\mu, \sigma^{2}) $$
+<p>
+This is called the likelihood function, considered as a function of \(\mu\) and \(\sigma^{2}\).
+That is, the likelihood of observing the data, given the model parameters.
+Once we have such a function of the model parameters, it is straight forward to maximize it and estimate the parameters.
+In practice, we always maximize the log of this function.
+Since the log is a monotically increasing function, maximizing the log achieves the same as maximizing the original function.
+This, apart from simplifying the mathematical analysis, helps with numerical precision of computer which is prone to underflow when dealing with the product of very small numbers.</p>
+<p>It might seem strange that one is asked to maximize the data given the parameters, instead of maximizing the parameters, given the data.
+Anyhow, doing the analysis, one finds that the maximum likelihood estimate of the mean is given by,
+</p>
+$$ \mu_{ML} = \frac{1}{N} \Sigma_{n=1}^{N}x_{n} $$
+<p>
+Which is effectively the sample mean.
+Similarly, the maximum likelihood estimate of the variance turns out to be the sample variance.</p>
+<p>We can apply the same</p>
+
+
+<div id="nextprev">
+<a href="/posts/probabilities_in_ml/"><div id="prevart">Previous:<br>Probabilities in Machine Learning</div></a>
+<a href="/selected/astronomy_books/"><div id="nextart">Next:<br>Astronomy: Academic Resources</div></a>
+</div>
+
+</article>
+
+</main>
+
+<footer>
+	<a href="https://linnabraham.me/">https://linnabraham.me/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+</footer>
+
+</body>
+</html>
