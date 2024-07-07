@@ -5,7 +5,7 @@
 	<description>Recent content in Selecteds on Linn Abraham&#39;s homepage</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Tue, 25 Jun 2024 10:13:09 +0530</lastBuildDate>
+	<lastBuildDate>Sun, 07 Jul 2024 09:20:25 +0530</lastBuildDate>
     
         <atom:link href="https://linnabraham.me/selected/index.xml" rel="self" type="application/rss+xml" />
 	
@@ -265,7 +265,7 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
-		<title>Resources for programmers</title>
+		<title>Programming: Resources</title>
 		<link>https://linnabraham.me/selected/programming_resources/</link>
 		<pubDate>Tue, 25 Jun 2024 10:13:09 +0530</pubDate>
 		
@@ -305,10 +305,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>Git and related concepts</title>
-		<link>https://linnabraham.me/selected/git_and_related/</link>
+		<link>https://linnabraham.me/notes/git_and_related/</link>
 		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/git_and_related/</guid>
+		<guid>https://linnabraham.me/notes/git_and_related/</guid>
 		<description>&lt;h1 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h1&gt;
 &lt;h2 id=&#34;diff&#34;&gt;diff&lt;/h2&gt;
 &lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
@@ -323,7 +323,7 @@ To see the changes that are brought about by a particular commit in git, do the 
 &lt;h2 id=&#34;merge&#34;&gt;&lt;code&gt;merge&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;There are different merge strategies like &lt;code&gt;fast-forward&lt;/code&gt;, &lt;code&gt;recursive&lt;/code&gt; etc. For non-divergent branches, the default is &lt;code&gt;fast-forward&lt;/code&gt;. This is the case when your local branch has no commits that are not there in the remote branch. For divergent branches, the default strategy is &lt;code&gt;recursive&lt;/code&gt;.
 The &lt;code&gt;git pull&lt;/code&gt; command  is basically doing a &lt;code&gt;git fetch&lt;/code&gt; and a &lt;code&gt;git merge&lt;/code&gt; combined.
-If you do not want to do a recursive merge, you can use &lt;code&gt;git merge --ff&lt;/code&gt; or &lt;code&gt;git pull --ff&lt;/code&gt;.&lt;/p&gt;
+If you do not want to do a recursive merge, you can use &lt;code&gt;git merge --ff-only&lt;/code&gt; or &lt;code&gt;git pull --ff-only&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;restore&#34;&gt;&lt;code&gt;restore&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;This is a dangerous command that you need to handle with caution.
 This is often used to replace your unstaged changes with a commited version etc.&lt;/p&gt;
@@ -377,7 +377,8 @@ If you want to get a taste of ArchLinux without installing and configuring every
 &lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Dmenu&#34;&gt;&lt;code&gt;dmenu&lt;/code&gt;&lt;/a&gt; as my application switcher&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.archlinux.org/title/Sxhkd&#34;&gt;&lt;code&gt;sxhkd&lt;/code&gt;&lt;/a&gt; for keyboard shortcuts&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Click here for my &lt;a href=&#34;https://github.com/linnabraham/dotfiles-primary&#34;&gt;primary dotfiles&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Click here for my &lt;a href=&#34;https://github.com/linnabraham/dotfiles-primary&#34;&gt;primary dotfiles&lt;/a&gt; and here for dotfiles for my &lt;a href=&#34;https://github.com/linnabraham/dotfiles-iucaa-arch&#34;&gt;office machine&lt;/a&gt;.
+Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-scripts&#34;&gt;useful scripts&lt;/a&gt; that I use as part of my setup.&lt;/p&gt;
 &lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Music player - &lt;a href=&#34;https://wiki.archlinux.org/title/Music_Player_Daemon&#34;&gt;&lt;code&gt;mpd&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/SoongNoonien/plattenalbum&#34;&gt;plattenablum&lt;/a&gt;&lt;/li&gt;
@@ -434,10 +435,10 @@ If you want to get a taste of ArchLinux without installing and configuring every
 	
 	<item>
 		<title>Lifehacks for a Workaholic</title>
-		<link>https://linnabraham.me/selected/lifehacks/</link>
+		<link>https://linnabraham.me/notes/lifehacks/</link>
 		<pubDate>Sun, 23 Jun 2024 12:41:17 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/lifehacks/</guid>
+		<guid>https://linnabraham.me/notes/lifehacks/</guid>
 		<description>&lt;p&gt;Life is mostly a game of achieving the best of both worlds (or many worlds).
 Here are some of my recommendations for someone who wants to run multiple tasks at a time but also seeks perfection in all that they do.
 There is something called the Getting Things Done (GTD) methodology as made famous by &lt;a href=&#34;https://www.amazon.com/Getting-Things-Done/dp/0143573195&#34;&gt;David Allen&lt;/a&gt; in his book of the same name. If you find the book a bit dry, watch videos by people on youtube like &lt;a href=&#34;https://www.youtube.com/@aliabdaal&#34;&gt;Ali Abdaal&lt;/a&gt;. Two other interesting books to read are &lt;a href=&#34;https://www.goodreads.com/book/show/40121378-atomic-habits&#34;&gt;Atomic Habits&lt;/a&gt; by James Clear and &lt;a href=&#34;https://www.goodreads.com/book/show/25744928-deep-work&#34;&gt;Deep Work&lt;/a&gt; by Cal Newport.&lt;/p&gt;
@@ -455,7 +456,7 @@ Keep a work log for each project where you document the progress you made each d
 	</item>
 	
 	<item>
-		<title>Toolkit for a Machine Learning Researcher</title>
+		<title>Machine Learning: Software Toolkit</title>
 		<link>https://linnabraham.me/selected/toolkit/</link>
 		<pubDate>Sun, 23 Jun 2024 10:34:25 +0530</pubDate>
 		
@@ -505,7 +506,7 @@ When you set up github actions, Github has a computer that serves the content of
 	</item>
 	
 	<item>
-		<title>Machine Learning Resources</title>
+		<title>Machine Learning: Academic Resources</title>
 		<link>https://linnabraham.me/selected/books/</link>
 		<pubDate>Sat, 22 Jun 2024 19:28:06 +0530</pubDate>
 		

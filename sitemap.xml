@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://linnabraham.me/selected/</loc>
+    <lastmod>2024-07-07T09:20:25+05:30</lastmod>
+  </url><url>
     <loc>https://linnabraham.me/posts/maximum_likelihood/</loc>
     <lastmod>2024-06-30T12:39:45+05:30</lastmod>
   </url><url>
@@ -32,13 +35,10 @@
     <loc>https://linnabraham.me/selected/programming_resources/</loc>
     <lastmod>2024-06-25T10:13:09+05:30</lastmod>
   </url><url>
-    <loc>https://linnabraham.me/selected/</loc>
-    <lastmod>2024-06-25T10:13:09+05:30</lastmod>
-  </url><url>
     <loc>https://linnabraham.me/notes/vim_tips/</loc>
     <lastmod>2024-06-24T15:04:48+05:30</lastmod>
   </url><url>
-    <loc>https://linnabraham.me/selected/git_and_related/</loc>
+    <loc>https://linnabraham.me/notes/git_and_related/</loc>
     <lastmod>2024-06-24T12:40:39+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/software_i_use/</loc>
@@ -47,7 +47,7 @@
     <loc>https://linnabraham.me/notes/understanding_diff/</loc>
     <lastmod>2024-06-24T11:45:39+05:30</lastmod>
   </url><url>
-    <loc>https://linnabraham.me/selected/lifehacks/</loc>
+    <loc>https://linnabraham.me/notes/lifehacks/</loc>
     <lastmod>2024-06-23T12:41:17+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/selected/toolkit/</loc>
