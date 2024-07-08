@@ -305,6 +305,9 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 &lt;h3 id=&#34;curated-videos&#34;&gt;Curated videos&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=QXjU9qTsYCc&#34;&gt;How do computers read code?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&#34;&gt;Missing Semester&lt;/a&gt; - videos on the Linux shell, Vim, Git, Tmux etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/@LukeSmithxyz&#34;&gt;Luke Smith&amp;rsquo;s Channel&lt;/a&gt; - videos on Linux ricing, ArchLinux, Vim, LaTeX and life advice.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/7jiPeIFXb6U&#34;&gt;I don&amp;rsquo;t like notebooks&lt;/a&gt; - jupytercon presentation made by Joel Grus, AI researcher at Allen AI.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
 	</item>
