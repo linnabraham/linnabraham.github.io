@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 	<title>Linn Abraham&#39;s homepage</title>
-	<link>https://linnabraham.me/notes/</link>
+	<link>http://localhost:1313/notes/</link>
 	<description>Recent content in Notes on Linn Abraham&#39;s homepage</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
 	<lastBuildDate>Tue, 25 Jun 2024 12:59:42 +0530</lastBuildDate>
     
-        <atom:link href="https://linnabraham.me/notes/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
 		<title>Astronomy: Academic Resources</title>
-		<link>https://linnabraham.me/selected/astronomy_books/</link>
+		<link>http://localhost:1313/selected/astronomy_books/</link>
 		<pubDate>Sun, 07 Jul 2024 09:20:25 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/astronomy_books/</guid>
+		<guid>http://localhost:1313/selected/astronomy_books/</guid>
 		<description>&lt;p&gt;Books I have found helpful in learning astronomy&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Astrophysics-Physicists-Arnab-Rai-Choudhuri/dp/0521815533/&#34;&gt;Astrophysics for Physicists&lt;/a&gt; by Arnab Rai Choudhuri&lt;/li&gt;
@@ -39,10 +39,10 @@
 	
 	<item>
 		<title>Maximum likelihood versus Bayesian</title>
-		<link>https://linnabraham.me/posts/maximum_likelihood/</link>
+		<link>http://localhost:1313/posts/maximum_likelihood/</link>
 		<pubDate>Sun, 30 Jun 2024 12:39:45 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/posts/maximum_likelihood/</guid>
+		<guid>http://localhost:1313/posts/maximum_likelihood/</guid>
 		<description>&lt;p&gt;Given that you observed a set of data points \(\mathbf{x_{1}}\),&amp;hellip;,\(\mathbf{x_{N}}\), can you produce the probability distribution function from which it was sampled?
 This problem is known as &lt;em&gt;density estimation&lt;/em&gt; and is related to the problem of model selection, one of the central problems in pattern recognition.
 However, it is to be considered if this is a sensible question to ask. Since any probability distribution that is non-zero at each of the sampled data points, is a possible candidate.&lt;/p&gt;
@@ -78,10 +78,10 @@ Similarly, the maximum likelihood estimate of the variance turns out to be the s
 	
 	<item>
 		<title>Probabilities in Machine Learning</title>
-		<link>https://linnabraham.me/posts/probabilities_in_ml/</link>
+		<link>http://localhost:1313/posts/probabilities_in_ml/</link>
 		<pubDate>Sun, 30 Jun 2024 10:07:20 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/posts/probabilities_in_ml/</guid>
+		<guid>http://localhost:1313/posts/probabilities_in_ml/</guid>
 		<description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;The concept of probability becomes more complicated the further you try to understand it.  There is no one answer to the question - What is meant by &amp;ldquo;probability&amp;rdquo;. There are in fact entire schools of thoughts when it comes to the interpretation of what are probabilities and how to use them. Two of the more popular ones are known as &lt;code&gt;Frequentism&#39; and &lt;/code&gt;Bayesianism&amp;rsquo;. Christopher Bishop in his highly acclaimed textbook on Machine Learning, mentions probability theory, decision theory and information theory as three important tools when it comes to learning machine learning. This article motivates the need to pursue probability in machine learning by first listing some areas where you encounter the concept. Then it tries to give an overview of the difficulties in understanding probabilities by listing some of the different interpretation of probabilities. Afterwards it introduces two concepts that are crucial to understanding probabilities - the concept of a probability distribution function and Bayes theorem which is one of the most important concepts in probability theory. The last two discussions are heavily inspired from the youtube videos by 3Blue1Brown&lt;/p&gt;
 &lt;h1 id=&#34;use-in-machine-learning&#34;&gt;Use in Machine Learning&lt;/h1&gt;
@@ -133,10 +133,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>Beginner&#39;s Guide to Machine Learning</title>
-		<link>https://linnabraham.me/posts/beginners_guide_to_ml/</link>
+		<link>http://localhost:1313/posts/beginners_guide_to_ml/</link>
 		<pubDate>Sun, 30 Jun 2024 09:58:24 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/posts/beginners_guide_to_ml/</guid>
+		<guid>http://localhost:1313/posts/beginners_guide_to_ml/</guid>
 		<description>&lt;p&gt;This article is targeted towards people from a science (mainly astrophysics) background with very little hands-on experience in Python programming, especially tasks related to machine learning projects.  The goal is to get acquainted with the jargons of the trade and to understand where everything fits in, in the grand scheme of things. Maybe its helpful to think of this as a user&amp;rsquo;s manual for jump starting your machine learning journey. However before we move on to the implementation side of things it is better if we address two fundamental questions. One - Why use machine learning at all? What problems does it solve? Two - Why Python? If you find yourselves already convinced about these questions do skip ahead.&lt;/p&gt;
 &lt;h1 id=&#34;why-machine-learning&#34;&gt;Why machine learning?&lt;/h1&gt;
 &lt;p&gt;Most things that we as humans learn cannot be put into a sequence of instructions to be followed word to word by another human or even a machine. Think about how you learnt to walk, speak, identify plants, birds and animals, distinguish a familiar face from amidst a crowd of faces and so on. We know that this ability of the human brain has to do with at least two things, the data that was supplied and the the millions of neurons in the brain. So we can think of machine learning or ML as a way of harnessing this power of the human brain to solve problems without explicit instructions but with data and learning algorithms. The current goal is not as ambitious as building a replacement for our brain but building smaller brains dedicated for specific tasks.  We can increasingly find  people applying ML to niche problems in all walks of life with the help of curated data that is specific to whatever problem they might have. However remember that ML is no magic bullet that can solve any issue thrown at it. It helps us to predict patterns in data which are difficult for the average human, by delegating the effort to computers. However it fails when the problem itself has no patterns - think of why ML cannot help you to hack the share market. Also it fails when there are patterns, but the data you have is not enough to capture the variance.&lt;/p&gt;
@@ -187,10 +187,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>AI over coffee</title>
-		<link>https://linnabraham.me/posts/ai_over_coffee/</link>
+		<link>http://localhost:1313/posts/ai_over_coffee/</link>
 		<pubDate>Sun, 30 Jun 2024 09:51:42 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/posts/ai_over_coffee/</guid>
+		<guid>http://localhost:1313/posts/ai_over_coffee/</guid>
 		<description>&lt;p&gt;This article is a coffee table discussion between two friends, Annie and Marty. Annie is an inquisitive learner who just met her long-time friend Marty, who is doing his PhD. in artificial intelligence. Annie is amused by the sudden rise of Artificial Intelligence and wants to understand the underlying concepts or principles that drive its development. She also wants to be abreast of the developments in the field that have led to the current state of affairs. The conversation is divided into sections for the reader to follow along easily.&lt;/p&gt;
 &lt;h1 id=&#34;the-dumb-and-powerful-computers-of-the-past&#34;&gt;The dumb and powerful computers of the past&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Annie&lt;/strong&gt;: Hi Marty. Can you explain to me what this whole A.I. thing is? What is all the buzz about?&lt;/p&gt;
@@ -244,15 +244,30 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
+		<title>Understanding Support Vector Machines</title>
+		<link>http://localhost:1313/posts/svm/</link>
+		<pubDate>Sat, 29 Jun 2024 18:24:45 +0530</pubDate>
+		
+		<guid>http://localhost:1313/posts/svm/</guid>
+		<description>\[
+\begin{aligned}
+KL(\hat{y} || y) &amp;= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &amp;= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+</description>
+	</item>
+	
+	<item>
 		<title>Social Media Links</title>
-		<link>https://linnabraham.me/personal/</link>
+		<link>http://localhost:1313/personal/</link>
 		<pubDate>Wed, 26 Jun 2024 17:29:48 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/personal/</guid>
+		<guid>http://localhost:1313/personal/</guid>
 		<description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://trakt.tv/users/linnabraham&#34;&gt;Trakt.tv&lt;/a&gt; - Movies I have watched&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://linnabraham.me/grwidget/&#34;&gt;Bookshelf&lt;/a&gt; - Books I have read&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://linnabraham.me/grwidget_reading/&#34;&gt;Reading&lt;/a&gt; - Books I am currently reading&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/grwidget/&#34;&gt;Bookshelf&lt;/a&gt; - Books I have read&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/grwidget_reading/&#34;&gt;Reading&lt;/a&gt; - Books I am currently reading&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/quotes/list?utf8=%E2%9C%93&amp;amp;sort=date_added&#34;&gt;Quotes&lt;/a&gt; - that are my favourite&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.last.fm/user/linnabraham/library/tracks&#34;&gt;Music&lt;/a&gt; - that I listen to&lt;/li&gt;
 &lt;/ul&gt;
@@ -261,10 +276,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>Research Notes</title>
-		<link>https://linnabraham.me/notes/research_notes/</link>
+		<link>http://localhost:1313/notes/research_notes/</link>
 		<pubDate>Tue, 25 Jun 2024 12:59:42 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/research_notes/</guid>
+		<guid>http://localhost:1313/notes/research_notes/</guid>
 		<description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.astropy.org/en/stable/io/fits/appendix/faq.html#id16&#34;&gt;I am opening many FITS files in a loop and getting OSError: Too many open files&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -274,10 +289,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>Learning Python</title>
-		<link>https://linnabraham.me/notes/learn_python/</link>
+		<link>http://localhost:1313/notes/learn_python/</link>
 		<pubDate>Tue, 25 Jun 2024 10:35:09 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/learn_python/</guid>
+		<guid>http://localhost:1313/notes/learn_python/</guid>
 		<description>&lt;p&gt;These are some of my notes on learning python.&lt;/p&gt;
 &lt;h3 id=&#34;dictionaries-in-python&#34;&gt;Dictionaries in Python&lt;/h3&gt;
 &lt;ul&gt;
@@ -293,10 +308,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	
 	<item>
 		<title>Programming: Resources</title>
-		<link>https://linnabraham.me/selected/programming_resources/</link>
+		<link>http://localhost:1313/selected/programming_resources/</link>
 		<pubDate>Tue, 25 Jun 2024 10:13:09 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/programming_resources/</guid>
+		<guid>http://localhost:1313/selected/programming_resources/</guid>
 		<description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; - A free Linux computer to practice coding, through a jupyter notebook IDE.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; - Problems to practice your coding skills.&lt;/li&gt;
@@ -309,15 +324,20 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/@LukeSmithxyz&#34;&gt;Luke Smith&amp;rsquo;s Channel&lt;/a&gt; - videos on Linux ricing, ArchLinux, Vim, LaTeX and life advice.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/7jiPeIFXb6U&#34;&gt;I don&amp;rsquo;t like notebooks&lt;/a&gt; - jupytercon presentation made by Joel Grus, AI researcher at Allen AI.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;book-recommendations&#34;&gt;Book Recommendations&lt;/h3&gt;
+&lt;p&gt;Books I have read atleast partly and found to be good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/&#34;&gt;The Hitchhiker&amp;rsquo;s Guide to Python: Best Practices for Development&lt;/a&gt; by Kenneth Reitz, Tanya Schlusser&lt;/li&gt;
+&lt;/ul&gt;
 </description>
 	</item>
 	
 	<item>
 		<title>Vim Tips</title>
-		<link>https://linnabraham.me/notes/vim_tips/</link>
+		<link>http://localhost:1313/notes/vim_tips/</link>
 		<pubDate>Mon, 24 Jun 2024 15:04:48 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/vim_tips/</guid>
+		<guid>http://localhost:1313/notes/vim_tips/</guid>
 		<description>&lt;h3 id=&#34;default-features-of-vim&#34;&gt;Default features of ViM&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;vimdiff&lt;/code&gt;&lt;/li&gt;
@@ -334,14 +354,27 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
+		<title>Today I found out</title>
+		<link>http://localhost:1313/today_i_found/</link>
+		<pubDate>Mon, 24 Jun 2024 13:44:53 +0530</pubDate>
+		
+		<guid>http://localhost:1313/today_i_found/</guid>
+		<description>&lt;h1 id=&#34;june-24th-2024&#34;&gt;June 24th, 2024&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;code&gt;tmux&lt;/code&gt; there is a possibility that you accidently kill your sessions by using &lt;code&gt;ctrl-d&lt;/code&gt; instead&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Git and related concepts</title>
-		<link>https://linnabraham.me/notes/git_and_related/</link>
+		<link>http://localhost:1313/notes/git_and_related/</link>
 		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/git_and_related/</guid>
+		<guid>http://localhost:1313/notes/git_and_related/</guid>
 		<description>&lt;h1 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h1&gt;
 &lt;h2 id=&#34;diff&#34;&gt;diff&lt;/h2&gt;
-&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
+&lt;p&gt;See my notes on &lt;a href=&#34;http://localhost:1313/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
 To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
@@ -392,10 +425,10 @@ This is also where you should start thinking of version controlling your data.&l
 	
 	<item>
 		<title>Software I Use</title>
-		<link>https://linnabraham.me/software_i_use/</link>
+		<link>http://localhost:1313/software_i_use/</link>
 		<pubDate>Mon, 24 Jun 2024 12:19:50 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/software_i_use/</guid>
+		<guid>http://localhost:1313/software_i_use/</guid>
 		<description>&lt;p&gt;I use Linux as my primary operating system. The flavour of Linux that I use is &lt;a href=&#34;https://archlinux.org/&#34;&gt;ArchLinux&lt;/a&gt;. Which is great on multiple counts. One, it follows a minimalist approach of giving you only the bare minimum packages and configurations by default. Two, it is a rolling release which means that you get the updates for all the packages you have installed, as soon as they are published. The third reason is the presence of the &lt;a href=&#34;https://aur.archlinux.org/&#34;&gt;AUR&lt;/a&gt; (Arch User Repository) which enables you to install a lot of niche packages with just a single command. All the complicated stuff like the download and configuration are taken care of for you under-the-hood.
 If you want to get a taste of ArchLinux without installing and configuring everything from scratch (like you should be doing), &lt;a href=&#34;https://endeavouros.com/&#34;&gt;EndeavourOS&lt;/a&gt; is a good one to try.&lt;/p&gt;
 &lt;h3 id=&#34;desktop-environment&#34;&gt;Desktop Environment&lt;/h3&gt;
@@ -416,7 +449,7 @@ Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-sc
 &lt;li&gt;Browser - &lt;code&gt;brave&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Text editor - &lt;code&gt;gvim&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Pdf viewer - &lt;code&gt;evince&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Code editor - &lt;a href=&#34;https://linnabraham.me/notes/vim_tips/&#34;&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code editor - &lt;a href=&#34;http://localhost:1313/notes/vim_tips/&#34;&gt;&lt;code&gt;vim&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Terminal emulator - &lt;code&gt;xfce4-terminal&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Image viewer - &lt;a href=&#34;https://wiki.archlinux.org/title/Sxiv&#34;&gt;&lt;code&gt;sxiv&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Graphical file manager - &lt;a href=&#34;https://github.com/lxqt/pcmanfm-qt&#34;&gt;&lt;code&gt;pcmanfm-qt&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
@@ -454,10 +487,10 @@ Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-sc
 	
 	<item>
 		<title>Understanding diff</title>
-		<link>https://linnabraham.me/notes/understanding_diff/</link>
+		<link>http://localhost:1313/notes/understanding_diff/</link>
 		<pubDate>Mon, 24 Jun 2024 11:45:39 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/understanding_diff/</guid>
+		<guid>http://localhost:1313/notes/understanding_diff/</guid>
 		<description>&lt;p&gt;Q. Do you find it difficult at times to interpret the output of &lt;code&gt;diff foo bar&lt;/code&gt;?&lt;/p&gt;
 &lt;p&gt;A. The output shows what changes you need to make to &lt;code&gt;foo&lt;/code&gt; in order to make it identical to &lt;code&gt;bar&lt;/code&gt;.&lt;/p&gt;
 </description>
@@ -465,10 +498,10 @@ Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-sc
 	
 	<item>
 		<title>Lifehacks for a Workaholic</title>
-		<link>https://linnabraham.me/notes/lifehacks/</link>
+		<link>http://localhost:1313/notes/lifehacks/</link>
 		<pubDate>Sun, 23 Jun 2024 12:41:17 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/notes/lifehacks/</guid>
+		<guid>http://localhost:1313/notes/lifehacks/</guid>
 		<description>&lt;p&gt;Life is mostly a game of achieving the best of both worlds (or many worlds).
 Here are some of my recommendations for someone who wants to run multiple tasks at a time but also seeks perfection in all that they do.
 There is something called the Getting Things Done (GTD) methodology as made famous by &lt;a href=&#34;https://www.amazon.com/Getting-Things-Done/dp/0143573195&#34;&gt;David Allen&lt;/a&gt; in his book of the same name. If you find the book a bit dry, watch videos by people on youtube like &lt;a href=&#34;https://www.youtube.com/@aliabdaal&#34;&gt;Ali Abdaal&lt;/a&gt;. Two other interesting books to read are &lt;a href=&#34;https://www.goodreads.com/book/show/40121378-atomic-habits&#34;&gt;Atomic Habits&lt;/a&gt; by James Clear and &lt;a href=&#34;https://www.goodreads.com/book/show/25744928-deep-work&#34;&gt;Deep Work&lt;/a&gt; by Cal Newport.&lt;/p&gt;
@@ -487,10 +520,10 @@ Keep a work log for each project where you document the progress you made each d
 	
 	<item>
 		<title>Machine Learning: Software Toolkit</title>
-		<link>https://linnabraham.me/selected/toolkit/</link>
+		<link>http://localhost:1313/selected/toolkit/</link>
 		<pubDate>Sun, 23 Jun 2024 10:34:25 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/toolkit/</guid>
+		<guid>http://localhost:1313/selected/toolkit/</guid>
 		<description>&lt;p&gt;When you start out by doing computer vision problems in Deep Learning, you quickly run into the issue of having to deal with remote machines. Especially one&amp;rsquo;s that have GPU designed for such tasks. When you have to deal with these headless machines that do not have a display or user interface, there is a need to learn a plethora of command line tools that are available on linux.
 In order to learn more about the tools that are mentioned below you can watch these set of lectures by the &lt;a href=&#34;https://www.youtube.com/watch?v=Z56Jmr9Z34Q&amp;amp;list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&#34;&gt;Missing Semester&lt;/a&gt; or follow &lt;a href=&#34;https://www.youtube.com/@LukeSmithxyz&#34;&gt;Luke Smith&lt;/a&gt; on youtube. Some of these tools have a big learning curve. Which is the price you pay in order to reap the rewards in the long term. However if you are someone who just wants to get things done and move along or are short of time. I will give alternate suggestions wherever applicable.&lt;/p&gt;
 &lt;h2 id=&#34;tools-that-are-useful-for-anyone&#34;&gt;Tools That are Useful for Anyone&lt;/h2&gt;
@@ -506,20 +539,28 @@ In order to learn more about the tools that are mentioned below you can watch th
 &lt;p&gt;Conda can be installed through either of the distributions Anaconda or Miniconda. Conda might be frustrating at time with the time taken to install packages. Use conda to install mamba and then use mamba in place of conda for all package installations. There are times when you might have to use pip. For example when the package is not there in conda. Or you need to install a package directly from it&amp;rsquo;s git version. But in all other cases you are much better off using conda for environment management because it can version control non Python software as well. You often require non Python software for compiling python packages.&lt;/p&gt;
 &lt;h3 id=&#34;research-reading--writing&#34;&gt;Research Reading &amp;amp; Writing&lt;/h3&gt;
 &lt;p&gt;Use markdown files for quick documentation. There are note editors that can read and render markdown like Obsidian, Logseq, Notion etc. Even ViM has some basic support for markdown. Use LaTeX for academic document preparation. Use Zotero for storing, annotating research papers and exporting the references as a bib file for use in LaTeX citations.&lt;/p&gt;
+&lt;h3 id=&#34;python-related&#34;&gt;Python related&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.python.org/3/library/pdb.html&#34;&gt;&lt;code&gt;pdb&lt;/code&gt;&lt;/a&gt; - python debugger&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/pylint/&#34;&gt;&lt;code&gt;pylint&lt;/code&gt;&lt;/a&gt; - catching basic errors in your code without running the code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/gdown/&#34;&gt;&lt;code&gt;gdown&lt;/code&gt;&lt;/a&gt; - host small datasets in your google drive and use gdown for creating scripts for downloading them on the go.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;machine-learning-specific-tools&#34;&gt;Machine Learning Specific Tools&lt;/h2&gt;
 &lt;h3 id=&#34;tensorflow-of-pytorch&#34;&gt;Tensorflow of PyTorch&lt;/h3&gt;
 &lt;p&gt;Both are great frameworks that are being actively developed. One pitfall that I have fallen into is thinking that the framework that makes it easy to write code is the best. This might not always be the case. Maybe it is good for the engineer who is playing with ready made stuff but not so good for the researcher who needs to look into the internals of the code they are running. PyTorch might be a tad better for the beginner than tensorflow in my opinion.&lt;/p&gt;
 &lt;h3 id=&#34;wandb&#34;&gt;Wandb&lt;/h3&gt;
 &lt;p&gt;Being able to capture the learning process is important to troubleshoot problems with the learning. You can visualize the training loss in each iteration of your epoch and monitor the validation loss after every epoch. You can also look into how the weights are changing. Or you could use model attribution techniques to create heatmaps etc.&lt;/p&gt;
+&lt;h3 id=&#34;dvc&#34;&gt;DVC&lt;/h3&gt;
+&lt;p&gt;When working on Machine Learning projects, you do a lot of data processing. Hence for reproducibility you should be able to be version control not just the code but also the data. As an added benefit DVC also lets you version control your model, if you need to do it.&lt;/p&gt;
 </description>
 	</item>
 	
 	<item>
 		<title>About this webpage</title>
-		<link>https://linnabraham.me/posts/website/</link>
+		<link>http://localhost:1313/posts/website/</link>
 		<pubDate>Sat, 22 Jun 2024 20:47:07 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/posts/website/</guid>
+		<guid>http://localhost:1313/posts/website/</guid>
 		<description>&lt;h1 id=&#34;github-actions&#34;&gt;Github Actions&lt;/h1&gt;
 &lt;p&gt;A website is basically an HTML file on someone else&amp;rsquo;s computer. Once you have this, then you need to have a unique easy-to-remember address to type into the address bar of your browser. This is translated into an IP address by your browser by looking up the number on the yellow pages of the internet, a process which is also called Domain Name Resolution and for which there are dedicated servers known as DNS servers.
 Therefore to run a website the minimum you require is a computer and a domain name. Luckily Github provides both to you for free. A computer through &lt;strong&gt;Github Actions&lt;/strong&gt; and a free domain name that includes .github.io.&lt;/p&gt;
@@ -537,10 +578,10 @@ When you set up github actions, Github has a computer that serves the content of
 	
 	<item>
 		<title>Machine Learning: Academic Resources</title>
-		<link>https://linnabraham.me/selected/books/</link>
+		<link>http://localhost:1313/selected/books/</link>
 		<pubDate>Sat, 22 Jun 2024 19:28:06 +0530</pubDate>
 		
-		<guid>https://linnabraham.me/selected/books/</guid>
+		<guid>http://localhost:1313/selected/books/</guid>
 		<description>&lt;p&gt;These are books I have read (at least partly) and know to be good.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864/&#34;&gt;Deep Learning with Python&lt;/a&gt; by Francois Chollet&lt;/li&gt;
@@ -566,10 +607,10 @@ When you set up github actions, Github has a computer that serves the content of
 	
 	<item>
 		<title></title>
-		<link>https://linnabraham.me/grwidget/</link>
+		<link>http://localhost:1313/grwidget/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://linnabraham.me/grwidget/</guid>
+		<guid>http://localhost:1313/grwidget/</guid>
 		<description>      &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
         .gr_grid_container {
           /* customize grid container div here. eg: width: 500px; */
@@ -611,7 +652,7 @@ When you set up github actions, Github has a computer that serves the content of
     &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Free Will&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/13180629-free-will&#34;&gt;&lt;img alt=&#34;Free Will&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1332924961l/13180629._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
     &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Top 10 for Men&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/6090934-top-10-for-men&#34;&gt;&lt;img alt=&#34;Top 10 for Men&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348802536l/6090934._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
     &lt;br style=&#34;clear: both&#34;/&gt;&lt;br/&gt;&lt;a class=&#34;gr_grid_branding&#34; style=&#34;font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/user/show/5186783-linn&#34;&gt;Linn&#39;s favorite books »&lt;/a&gt;
-  &lt;noscript&gt;&lt;br/&gt;Share &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/&#34;&gt;book reviews&lt;/a&gt; and ratings with Linn, and even join a &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
+  &lt;noscript&gt;&lt;br/&gt;Share &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost:1313/&#34;&gt;book reviews&lt;/a&gt; and ratings with Linn, and even join a &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost:1313/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
   &lt;/div&gt;
 
       &lt;/div&gt;
@@ -622,10 +663,10 @@ When you set up github actions, Github has a computer that serves the content of
 	
 	<item>
 		<title></title>
-		<link>https://linnabraham.me/grwidget_reading/</link>
+		<link>http://localhost:1313/grwidget_reading/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://linnabraham.me/grwidget_reading/</guid>
+		<guid>http://localhost:1313/grwidget_reading/</guid>
 		<description>
       &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
         .gr_grid_container {
@@ -657,7 +698,7 @@ When you set up github actions, Github has a computer that serves the content of
     &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Sins of the Father&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/15927346-the-sins-of-the-father&#34;&gt;&lt;img alt=&#34;The Sins of the Father&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347994804l/15927346._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
     &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;രണ്ടാമൂഴം | Randamoozham&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/book/show/2757012-randamoozham&#34;&gt;&lt;img alt=&#34;രണ്ടാമൂഴം | Randamoozham&#34; border=&#34;0&#34; src=&#34;https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1260916398l/2757012._SX98_.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
     &lt;br style=&#34;clear: both&#34;/&gt;&lt;br/&gt;&lt;a class=&#34;gr_grid_branding&#34; style=&#34;font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both&#34; rel=&#34;nofollow&#34; href=&#34;https://www.goodreads.com/user/show/5186783-linn&#34;&gt;Linn&#39;s favorite books »&lt;/a&gt;
-  &lt;noscript&gt;&lt;br/&gt;Share &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/&#34;&gt;book reviews&lt;/a&gt; and ratings with Linn, and even join a &lt;a rel=&#34;nofollow&#34; href=&#34;https://linnabraham.me/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
+  &lt;noscript&gt;&lt;br/&gt;Share &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost:1313/&#34;&gt;book reviews&lt;/a&gt; and ratings with Linn, and even join a &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost:1313/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
   &lt;/div&gt;
 
       &lt;/div&gt;
@@ -667,10 +708,10 @@ When you set up github actions, Github has a computer that serves the content of
 	
 	<item>
 		<title>About Me</title>
-		<link>https://linnabraham.me/about/</link>
+		<link>http://localhost:1313/about/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://linnabraham.me/about/</guid>
+		<guid>http://localhost:1313/about/</guid>
 		<description>&lt;p&gt;I am Linn Abraham. I am basically a computer nerd, who also happens to be very passionate about Science.
 I am doing a Ph.D.  where I work on solving problems in Astrophysics using Machine Learning.
 A few of the problems that I work on are:&lt;/p&gt;
@@ -681,16 +722,16 @@ A few of the problems that I work on are:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;My work on the prediction of solar flares using Deep Learning is part of a JRF Project funded by ISRO. I developed and currently maintain the website for the &lt;a href=&#34;https://suit.iucaa.in&#34;&gt;Solar Ultraviolet Imaging Telescope (SUIT)&lt;/a&gt; along with my teammates in &lt;a href=&#34;https://www.google.com/maps/place/The+Inter-University+Centre+for+Astronomy+and+Astrophysics/@18.5592415,73.8253115,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB%3Dw114-h86-k-no!7i4000!8i3000!4m11!1m2!2m1!1sIUCAA!3m7!1s0x3bc2bf45db40022d:0x1efcdd94c3239f51!8m2!3d18.5592415!4d73.8253115!10e5!15sCgVJVUNBQZIBEnJlc2VhcmNoX2luc3RpdHV0ZeABAA!16zL20vMDQ0ODg1?entry=ttu&#34;&gt;IUCAA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which is a collection of random articles that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page. You can also connect with me on &lt;a href=&#34;https://www.linkedin.com/in/linn-abraham/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;If you are interested to know me personally check out my &lt;a href=&#34;https://linnabraham.me/personal/&#34;&gt;social media&lt;/a&gt; links.&lt;/p&gt;
+&lt;p&gt;If you are interested to know me personally check out my &lt;a href=&#34;http://localhost:1313/personal/&#34;&gt;social media&lt;/a&gt; links.&lt;/p&gt;
 </description>
 	</item>
 	
 	<item>
 		<title>Quick Links</title>
-		<link>https://linnabraham.me/links/</link>
+		<link>http://localhost:1313/links/</link>
 		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 		
-		<guid>https://linnabraham.me/links/</guid>
+		<guid>http://localhost:1313/links/</guid>
 		<description>&lt;p&gt;Hey cool&lt;/p&gt;
 </description>
 	</item>

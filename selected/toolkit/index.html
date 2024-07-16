@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<title>Machine Learning: Software Toolkit | Linn Abraham&#39;s homepage</title>
-	<link rel="canonical" href="https://linnabraham.me/">
+	<link rel="canonical" href="http://localhost:1313/">
 	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/style.css'>
 	<link rel="icon" href="/favicon.ico">
@@ -44,11 +44,19 @@ In order to learn more about the tools that are mentioned below you can watch th
 <p>Conda can be installed through either of the distributions Anaconda or Miniconda. Conda might be frustrating at time with the time taken to install packages. Use conda to install mamba and then use mamba in place of conda for all package installations. There are times when you might have to use pip. For example when the package is not there in conda. Or you need to install a package directly from it&rsquo;s git version. But in all other cases you are much better off using conda for environment management because it can version control non Python software as well. You often require non Python software for compiling python packages.</p>
 <h3 id="research-reading--writing">Research Reading &amp; Writing</h3>
 <p>Use markdown files for quick documentation. There are note editors that can read and render markdown like Obsidian, Logseq, Notion etc. Even ViM has some basic support for markdown. Use LaTeX for academic document preparation. Use Zotero for storing, annotating research papers and exporting the references as a bib file for use in LaTeX citations.</p>
+<h3 id="python-related">Python related</h3>
+<ul>
+<li><a href="https://docs.python.org/3/library/pdb.html"><code>pdb</code></a> - python debugger</li>
+<li><a href="https://pypi.org/project/pylint/"><code>pylint</code></a> - catching basic errors in your code without running the code</li>
+<li><a href="https://pypi.org/project/gdown/"><code>gdown</code></a> - host small datasets in your google drive and use gdown for creating scripts for downloading them on the go.</li>
+</ul>
 <h2 id="machine-learning-specific-tools">Machine Learning Specific Tools</h2>
 <h3 id="tensorflow-of-pytorch">Tensorflow of PyTorch</h3>
 <p>Both are great frameworks that are being actively developed. One pitfall that I have fallen into is thinking that the framework that makes it easy to write code is the best. This might not always be the case. Maybe it is good for the engineer who is playing with ready made stuff but not so good for the researcher who needs to look into the internals of the code they are running. PyTorch might be a tad better for the beginner than tensorflow in my opinion.</p>
 <h3 id="wandb">Wandb</h3>
 <p>Being able to capture the learning process is important to troubleshoot problems with the learning. You can visualize the training loss in each iteration of your epoch and monitor the validation loss after every epoch. You can also look into how the weights are changing. Or you could use model attribution techniques to create heatmaps etc.</p>
+<h3 id="dvc">DVC</h3>
+<p>When working on Machine Learning projects, you do a lot of data processing. Hence for reproducibility you should be able to be version control not just the code but also the data. As an added benefit DVC also lets you version control your model, if you need to do it.</p>
 
 
 <div id="nextprev">
@@ -61,7 +69,7 @@ In order to learn more about the tools that are mentioned below you can watch th
 </main>
 
 <footer>
-	<a href="https://linnabraham.me/">https://linnabraham.me/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
+	<a href="http://localhost:1313/">http://localhost:1313/</a><br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
 </footer>
 
 </body>
