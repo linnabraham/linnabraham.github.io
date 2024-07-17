@@ -345,10 +345,14 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 		<guid>https://linnabraham.me/notes/git_and_related/</guid>
 		<description>&lt;h1 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h1&gt;
 &lt;h2 id=&#34;diff&#34;&gt;diff&lt;/h2&gt;
-&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
-To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
+&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When using &lt;code&gt;git diff&lt;/code&gt; what you are actually seeing is the following:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff HEAD..CURRENT_STATE_OF_REPO
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that this doesn&amp;rsquo;t show your staged changes. Use the &lt;code&gt;--staged&lt;/code&gt; to see those.
+For a condensed view use the &lt;code&gt;--stat&lt;/code&gt; flag.&lt;/p&gt;
+&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
 &lt;p&gt;The changes that you to immediately make to your git tracked files are always in the &lt;code&gt;unstaged&lt;/code&gt; state. To stage them, you need to use the &lt;code&gt;git add&lt;/code&gt; command.&lt;/p&gt;
 &lt;h2 id=&#34;commit&#34;&gt;commit&lt;/h2&gt;
 &lt;p&gt;You associate a group of changes, possibly to multiple files, to a &lt;code&gt;hash&lt;/code&gt; value. You also associate this &lt;code&gt;hash&lt;/code&gt; with a commit message for it to make sense to you why you made these changes.&lt;/p&gt;
@@ -694,16 +698,6 @@ A few of the problems that I work on are:&lt;/p&gt;
 &lt;p&gt;My work on the prediction of solar flares using Deep Learning is part of a JRF Project funded by ISRO. I developed and currently maintain the website for the &lt;a href=&#34;https://suit.iucaa.in&#34;&gt;Solar Ultraviolet Imaging Telescope (SUIT)&lt;/a&gt; along with my teammates in &lt;a href=&#34;https://www.google.com/maps/place/The+Inter-University+Centre+for+Astronomy+and+Astrophysics/@18.5592415,73.8253115,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB%3Dw114-h86-k-no!7i4000!8i3000!4m11!1m2!2m1!1sIUCAA!3m7!1s0x3bc2bf45db40022d:0x1efcdd94c3239f51!8m2!3d18.5592415!4d73.8253115!10e5!15sCgVJVUNBQZIBEnJlc2VhcmNoX2luc3RpdHV0ZeABAA!16zL20vMDQ0ODg1?entry=ttu&#34;&gt;IUCAA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which is a collection of random articles that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page. You can also connect with me on &lt;a href=&#34;https://www.linkedin.com/in/linn-abraham/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you are interested to know me personally check out my &lt;a href=&#34;https://linnabraham.me/personal/&#34;&gt;social media&lt;/a&gt; links.&lt;/p&gt;
-</description>
-	</item>
-	
-	<item>
-		<title>Quick Links</title>
-		<link>https://linnabraham.me/links/</link>
-		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-		
-		<guid>https://linnabraham.me/links/</guid>
-		<description>&lt;p&gt;Hey cool&lt;/p&gt;
 </description>
 	</item>
 	

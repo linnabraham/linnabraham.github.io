@@ -6,9 +6,11 @@
 	<link rel='alternate' type='application/rss+xml' title="Linn Abraham&#39;s homepage RSS" href='/index.xml'>
 	<link rel='stylesheet' type='text/css' href='/style.css'>
 	<link rel="icon" href="/favicon.ico">
-	<meta name="description" content="Basic usage diff See my notes on Understanding Diff. To see the changes that are brought about by a particular commit in git, do the following:
-git diff &lt;parent-commit&gt;..&lt;current-commit&gt; staging The changes that you to immediately make to your git tracked files are always in the unstaged state. To stage them, you need to use the git add command.
-commit You associate a group of changes, possibly to multiple files, to a hash value.">
+	<meta name="description" content="Basic usage diff See my notes on Understanding Diff.
+To see the changes that are brought about by a particular commit in git, do the following:
+git diff &lt;parent-commit&gt;..&lt;current-commit&gt; When using git diff what you are actually seeing is the following:
+git diff HEAD..CURRENT_STATE_OF_REPO Note that this doesn&rsquo;t show your staged changes. Use the --staged to see those. For a condensed view use the --stat flag.
+staging The changes that you to immediately make to your git tracked files are always in the unstaged state.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<meta charset="utf-8">
@@ -33,10 +35,14 @@ commit You associate a group of changes, possibly to multiple files, to a hash v
 
 <h1 id="basic-usage">Basic usage</h1>
 <h2 id="diff">diff</h2>
-<p>See my notes on <a href="https://linnabraham.me/notes/understanding_diff/">Understanding Diff</a>.
-To see the changes that are brought about by a particular commit in git, do the following:</p>
+<p>See my notes on <a href="https://linnabraham.me/notes/understanding_diff/">Understanding Diff</a>.</p>
+<p>To see the changes that are brought about by a particular commit in git, do the following:</p>
 <pre tabindex="0"><code>git diff &lt;parent-commit&gt;..&lt;current-commit&gt;
-</code></pre><h2 id="staging">staging</h2>
+</code></pre><p>When using <code>git diff</code> what you are actually seeing is the following:</p>
+<pre tabindex="0"><code>git diff HEAD..CURRENT_STATE_OF_REPO
+</code></pre><p>Note that this doesn&rsquo;t show your staged changes. Use the <code>--staged</code> to see those.
+For a condensed view use the <code>--stat</code> flag.</p>
+<h2 id="staging">staging</h2>
 <p>The changes that you to immediately make to your git tracked files are always in the <code>unstaged</code> state. To stage them, you need to use the <code>git add</code> command.</p>
 <h2 id="commit">commit</h2>
 <p>You associate a group of changes, possibly to multiple files, to a <code>hash</code> value. You also associate this <code>hash</code> with a commit message for it to make sense to you why you made these changes.</p>
