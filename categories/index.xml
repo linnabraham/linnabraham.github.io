@@ -299,7 +299,6 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 		<description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; - A free Linux computer to practice coding, through a jupyter notebook IDE.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; - Problems to practice your coding skills.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://lectures.scientific-python.org/&#34;&gt;Scientific Python&lt;/a&gt; - Introduction to advanced topics in scientific data analysis with Python.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;curated-videos&#34;&gt;Curated videos&lt;/h3&gt;
 &lt;ul&gt;
@@ -311,6 +310,7 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 &lt;h3 id=&#34;book-recommendations&#34;&gt;Book Recommendations&lt;/h3&gt;
 &lt;p&gt;Books I have read atleast partly and found to be good&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://lectures.scientific-python.org/&#34;&gt;Scientific Python Lectures&lt;/a&gt; - A self contained introduction to Python and associated packages for scientific purposes.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Hitchhikers-Guide-Python-Practices-Development/dp/1491933178/&#34;&gt;The Hitchhiker&amp;rsquo;s Guide to Python: Best Practices for Development&lt;/a&gt; by Kenneth Reitz, Tanya Schlusser&lt;/li&gt;
 &lt;/ul&gt;
 </description>
