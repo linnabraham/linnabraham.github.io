@@ -5,10 +5,25 @@
 	<description>Recent content in Selecteds on Linn Abraham&#39;s homepage</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Sun, 07 Jul 2024 09:20:25 +0530</lastBuildDate>
+	<lastBuildDate>Mon, 22 Jul 2024 09:42:07 +0530</lastBuildDate>
     
         <atom:link href="https://linnabraham.me/selected/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>Programming: Tools and Resources</title>
+		<link>https://linnabraham.me/selected/programming_tools/</link>
+		<pubDate>Mon, 22 Jul 2024 09:42:07 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/selected/programming_tools/</guid>
+		<description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; - A free Linux computer to practice coding, through a jupyter notebook IDE.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; - Problems to practice your coding skills.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://replit.com/learn&#34;&gt;Replit&lt;/a&gt; - Platform to learn and teach programming with help of virtual machines.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/&#34;&gt;Kaggle&lt;/a&gt; - Cloud based jupyter notebook and datasets&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
 	
 	<item>
 		<title>Astronomy: Academic Resources</title>
@@ -244,6 +259,21 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
+		<title>Understanding Support Vector Machines</title>
+		<link>https://linnabraham.me/posts/svm/</link>
+		<pubDate>Sat, 29 Jun 2024 18:24:45 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/posts/svm/</guid>
+		<description>\[
+\begin{aligned}
+KL(\hat{y} || y) &amp;= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &amp;= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+</description>
+	</item>
+	
+	<item>
 		<title>Social Media Links</title>
 		<link>https://linnabraham.me/personal/</link>
 		<pubDate>Wed, 26 Jun 2024 17:29:48 +0530</pubDate>
@@ -292,16 +322,12 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
-		<title>Programming: Resources</title>
+		<title>Programming: Academic Resources</title>
 		<link>https://linnabraham.me/selected/programming_resources/</link>
 		<pubDate>Tue, 25 Jun 2024 10:13:09 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/selected/programming_resources/</guid>
-		<description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://colab.research.google.com/&#34;&gt;Google Colab&lt;/a&gt; - A free Linux computer to practice coding, through a jupyter notebook IDE.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://exercism.org/&#34;&gt;Exercism&lt;/a&gt; - Problems to practice your coding skills.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;curated-videos&#34;&gt;Curated videos&lt;/h3&gt;
+		<description>&lt;h3 id=&#34;curated-videos&#34;&gt;Curated videos&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=QXjU9qTsYCc&#34;&gt;How do computers read code?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&#34;&gt;Missing Semester&lt;/a&gt; - videos on the Linux shell, Vim, Git, Tmux etc.&lt;/li&gt;
@@ -339,6 +365,19 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 	</item>
 	
 	<item>
+		<title>Today I found out</title>
+		<link>https://linnabraham.me/today_i_found/</link>
+		<pubDate>Mon, 24 Jun 2024 13:44:53 +0530</pubDate>
+		
+		<guid>https://linnabraham.me/today_i_found/</guid>
+		<description>&lt;h1 id=&#34;june-24th-2024&#34;&gt;June 24th, 2024&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;code&gt;tmux&lt;/code&gt; there is a possibility that you accidently kill your sessions by using &lt;code&gt;ctrl-d&lt;/code&gt; instead&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>Git and related concepts</title>
 		<link>https://linnabraham.me/notes/git_and_related/</link>
 		<pubDate>Mon, 24 Jun 2024 12:40:39 +0530</pubDate>
@@ -346,14 +385,10 @@ $$ P(H|E) = \frac{P(H)P(E|H)}{P(H)P(E|H)+P(\neg H)P(E|\neg H)}$$
 		<guid>https://linnabraham.me/notes/git_and_related/</guid>
 		<description>&lt;h1 id=&#34;basic-usage&#34;&gt;Basic usage&lt;/h1&gt;
 &lt;h2 id=&#34;diff&#34;&gt;diff&lt;/h2&gt;
-&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
+&lt;p&gt;See my notes on &lt;a href=&#34;https://linnabraham.me/notes/understanding_diff/&#34;&gt;Understanding Diff&lt;/a&gt;.
+To see the changes that are brought about by a particular commit in git, do the following:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff &amp;lt;parent-commit&amp;gt;..&amp;lt;current-commit&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When using &lt;code&gt;git diff&lt;/code&gt; what you are actually seeing is the following:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git diff HEAD..CURRENT_STATE_OF_REPO
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that this doesn&amp;rsquo;t show your staged changes. Use the &lt;code&gt;--staged&lt;/code&gt; to see those.
-For a condensed view use the &lt;code&gt;--stat&lt;/code&gt; flag.&lt;/p&gt;
-&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;staging&#34;&gt;staging&lt;/h2&gt;
 &lt;p&gt;The changes that you to immediately make to your git tracked files are always in the &lt;code&gt;unstaged&lt;/code&gt; state. To stage them, you need to use the &lt;code&gt;git add&lt;/code&gt; command.&lt;/p&gt;
 &lt;h2 id=&#34;commit&#34;&gt;commit&lt;/h2&gt;
 &lt;p&gt;You associate a group of changes, possibly to multiple files, to a &lt;code&gt;hash&lt;/code&gt; value. You also associate this &lt;code&gt;hash&lt;/code&gt; with a commit message for it to make sense to you why you made these changes.&lt;/p&gt;
@@ -558,7 +593,8 @@ When you set up github actions, Github has a computer that serves the content of
 		<pubDate>Sat, 22 Jun 2024 19:28:06 +0530</pubDate>
 		
 		<guid>https://linnabraham.me/selected/books/</guid>
-		<description>&lt;p&gt;These are books I have read (at least partly) and know to be good.&lt;/p&gt;
+		<description>&lt;p&gt;Go here for a &lt;a href=&#34;https://github.com/linnabraham/ml-tutorials/blob/master/Resources.md&#34;&gt;collection of resources&lt;/a&gt; compiled together like a course outline.&lt;/p&gt;
+&lt;p&gt;These are books I have read (at least partly) and know to be good.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Learning-Python-Second-Fran%C3%A7ois-Chollet/dp/1617296864/&#34;&gt;Deep Learning with Python&lt;/a&gt; by Francois Chollet&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://pyimagesearch.com/deep-learning-computer-vision-python-book/&#34;&gt;Deep Learning for Computer Vision&lt;/a&gt; by Adrian Rosebrock&lt;/li&gt;
@@ -699,6 +735,16 @@ A few of the problems that I work on are:&lt;/p&gt;
 &lt;p&gt;My work on the prediction of solar flares using Deep Learning is part of a JRF Project funded by ISRO. I developed and currently maintain the website for the &lt;a href=&#34;https://suit.iucaa.in&#34;&gt;Solar Ultraviolet Imaging Telescope (SUIT)&lt;/a&gt; along with my teammates in &lt;a href=&#34;https://www.google.com/maps/place/The+Inter-University+Centre+for+Astronomy+and+Astrophysics/@18.5592415,73.8253115,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP8MobfPKzfBxsux1HhY-jz_zNzlL24z6G5CHuB%3Dw114-h86-k-no!7i4000!8i3000!4m11!1m2!2m1!1sIUCAA!3m7!1s0x3bc2bf45db40022d:0x1efcdd94c3239f51!8m2!3d18.5592415!4d73.8253115!10e5!15sCgVJVUNBQZIBEnJlc2VhcmNoX2luc3RpdHV0ZeABAA!16zL20vMDQ0ODg1?entry=ttu&#34;&gt;IUCAA&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have a &lt;a href=&#34;https://machinelearningmaniac.blogspot.com/&#34;&gt;blog&lt;/a&gt; which is a collection of random articles that I write in relation to machine learning and astronomy. This is my &lt;a href=&#34;https://github.com/linnabraham&#34;&gt;github&lt;/a&gt; page. You can also connect with me on &lt;a href=&#34;https://www.linkedin.com/in/linn-abraham/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you are interested to know me personally check out my &lt;a href=&#34;https://linnabraham.me/personal/&#34;&gt;social media&lt;/a&gt; links.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
+		<title>Quick Links</title>
+		<link>https://linnabraham.me/links/</link>
+		<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+		
+		<guid>https://linnabraham.me/links/</guid>
+		<description>&lt;p&gt;Hey cool&lt;/p&gt;
 </description>
 	</item>
 	

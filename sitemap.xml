@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://linnabraham.me/selected/astronomy_books/</loc>
-    <lastmod>2024-07-07T09:20:25+05:30</lastmod>
+    <loc>https://linnabraham.me/selected/programming_tools/</loc>
+    <lastmod>2024-07-22T09:42:07+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/selected/</loc>
+    <lastmod>2024-07-22T09:42:07+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/selected/astronomy_books/</loc>
     <lastmod>2024-07-07T09:20:25+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/posts/maximum_likelihood/</loc>
@@ -22,6 +25,9 @@
   </url><url>
     <loc>https://linnabraham.me/posts/ai_over_coffee/</loc>
     <lastmod>2024-06-30T09:51:42+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/posts/svm/</loc>
+    <lastmod>2024-06-29T18:24:45+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/personal/</loc>
     <lastmod>2024-06-26T17:29:48+05:30</lastmod>
@@ -40,6 +46,9 @@
   </url><url>
     <loc>https://linnabraham.me/notes/vim_tips/</loc>
     <lastmod>2024-06-24T15:04:48+05:30</lastmod>
+  </url><url>
+    <loc>https://linnabraham.me/today_i_found/</loc>
+    <lastmod>2024-06-24T13:44:53+05:30</lastmod>
   </url><url>
     <loc>https://linnabraham.me/notes/git_and_related/</loc>
     <lastmod>2024-06-24T12:40:39+05:30</lastmod>
@@ -72,6 +81,8 @@
     <loc>https://linnabraham.me/about/</loc>
   </url><url>
     <loc>https://linnabraham.me/categories/</loc>
+  </url><url>
+    <loc>https://linnabraham.me/links/</loc>
   </url><url>
     <loc>https://linnabraham.me/tags/</loc>
   </url>
