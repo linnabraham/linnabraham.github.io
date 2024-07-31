@@ -585,7 +585,7 @@ If you want to get a taste of ArchLinux without installing and configuring every
 Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-scripts&#34;&gt;useful scripts&lt;/a&gt; that I use as part of my setup.&lt;/p&gt;
 &lt;h3 id=&#34;common-applications-that-i-use&#34;&gt;Common Applications that I use&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Music player - &lt;a href=&#34;https://wiki.archlinux.org/title/Music_Player_Daemon&#34;&gt;&lt;code&gt;mpd&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/SoongNoonien/plattenalbum&#34;&gt;plattenablum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Music player - &lt;a href=&#34;https://wiki.archlinux.org/title/Music_Player_Daemon&#34;&gt;&lt;code&gt;mpd&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/SoongNoonien/plattenalbum&#34;&gt;&lt;code&gt;plattenalbum&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Video player - &lt;code&gt;mpv&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Browser - &lt;code&gt;brave&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Text editor - &lt;code&gt;gvim&lt;/code&gt;&lt;/li&gt;
@@ -609,7 +609,7 @@ Here is a collection of &lt;a href=&#34;https://github.com/linnabraham/useful-sc
 &lt;li&gt;Calendar management - &lt;a href=&#34;https://github.com/pimutils/khal&#34;&gt;&lt;code&gt;khal&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/pimutils/vdirsyncer&#34;&gt;&lt;code&gt;vdirsyncer&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Password management - &lt;a href=&#34;https://www.passwordstore.org/&#34;&gt;&lt;code&gt;pass&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://github.com/carnager/rofi-pass&#34;&gt;&lt;code&gt;rofi-pass&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Music metadata management - &lt;a href=&#34;https://musicbrainz.org/doc/MusicBrainz_Picard&#34;&gt;&lt;code&gt;musicbrainz picard&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Backup management - &lt;a href=&#34;https://wiki.archlinux.org/title/Btrfs&#34;&gt;btrfs&lt;/a&gt; + &lt;a href=&#34;https://wiki.archlinux.org/title/snapper&#34;&gt;&lt;code&gt;snapper&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Backup management - &lt;a href=&#34;https://wiki.archlinux.org/title/Btrfs&#34;&gt;&lt;code&gt;btrfs&lt;/code&gt;&lt;/a&gt; + &lt;a href=&#34;https://wiki.archlinux.org/title/snapper&#34;&gt;&lt;code&gt;snapper&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Dotfiles management - &lt;a href=&#34;https://yadm.io/&#34;&gt;&lt;code&gt;yadm&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;low-level-configurations&#34;&gt;Low-level configurations&lt;/h3&gt;
